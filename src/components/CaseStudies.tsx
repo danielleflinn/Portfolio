@@ -1,6 +1,7 @@
 import React from 'react';
 import { RecipeCard } from './RecipeCard';
 import { BookOpenIcon } from 'lucide-react';
+import ExtensionCover from '../images/Extension-cover.png';
 export function CaseStudies() {
   const caseStudies = [{
     title: 'Financial App Redesign',
@@ -12,7 +13,7 @@ export function CaseStudies() {
   }, {
     title: 'Modernizing the Bitwarden Extension',
     description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature.',
-    image: '../images/Extension-cover.png',
+    image: ExtensionCover,
     duration: '10 months',
     team: '2 people',
     tools: ['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management']
@@ -55,7 +56,9 @@ export function CaseStudies() {
             My Recipe Book
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real challenges, scaleable solutions, and measurable outcomes demonstrating my impact from cooking with start ups and established companies. 
+            Real challenges, scaleable solutions, and measurable outcomes
+            demonstrating my impact from cooking with start ups and established
+            companies.
           </p>
         </div>
         <div className="flex flex-col gap-6">

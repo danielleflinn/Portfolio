@@ -42,16 +42,19 @@ export function About() {
               </h2>
             </div>
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-              Julia Chen
+              Danielle Flinn
             </h3>
             <p className="text-gray-600 mb-6">
               I’m a Senior Product Designer serving up design solutions that balance user needs, business goals, and engineering workflows. I bring system thinking, process maturity, and excellence to growing design teams (and the kitchen).
             </p>
             <p className="text-gray-600 mb-6">
-              When I'm not designing interfaces, you'll find me experimenting
-              with new recipes in my kitchen, exploring local farmers markets,
-              or hosting dinner parties where I test both my latest culinary
-              creations and design prototypes on willing friends.
+              When I'm not working, you'll find me experimenting
+              with new recipes in my kitchen, exploring a new local restaurant,
+              hiking, or meeting new friends at a social dance. Wherever I go, 
+              I’m curious to understand how the world works and am on the lookout 
+              for fantastic design inspiration. 
+
+              
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
