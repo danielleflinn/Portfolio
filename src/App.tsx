@@ -1,0 +1,21 @@
+import React from 'react';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { Skills } from './components/Skills';
+import { CaseStudies } from './components/CaseStudies';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+export function App() {
+  return <div className="w-full min-h-screen bg-[#FFFAF5]">
+      <Navbar />
+      <main className="w-full">
+        <Hero />
+        <Skills />
+        <CaseStudies />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
+    </div>;
+}
