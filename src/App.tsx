@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Skills } from './components/Skills';
 import { CaseStudies } from './components/CaseStudies';
-import { About } from './components/About';
+import { DesignPhilosophy } from './components/DesignPhilosophy';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 export function App() {
@@ -13,7 +13,7 @@ export function App() {
         <Hero />
         <Skills />
         <CaseStudies />
-        <About />
+        <DesignPhilosophy />
         <Contact />
       </main>
       <Footer />

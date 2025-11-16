@@ -4,10 +4,10 @@ import { ChefHatIcon, PenToolIcon, SparklesIcon, CheckCircleIcon, SettingsIcon }
 export function About() {
   return <section id="chef" className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-12">
-          <motion.div className="md:w-1/2" initial={{
+        <div className="flex flex-col-reverse items-center md:flex-row gap-12 justify-center">
+          <motion.div initial={{
           opacity: 0,
-          x: -20
+          x: 20
         }} whileInView={{
           opacity: 1,
           x: 0
@@ -26,17 +26,16 @@ export function About() {
               Danielle Flinn
             </h3>
             <p className="text-gray-600 mb-6">
-              I'm a Senior Product Designer serving up design solutions that
+              I'm a strong Senior Product Designer and lead serving up design solutions that
               balance user needs, business goals, and engineering workflows. I
               bring system thinking, process maturity, and excellence to growing
               design teams (and the kitchen).
             </p>
             <p className="text-gray-600 mb-6">
-              When I'm not working, you'll find me experimenting with new
-              recipes in my kitchen, exploring a new local restaurant, hiking,
-              or meeting new friends at a social dance. Wherever I go, I'm
-              curious to understand how the world works and am on the lookout
-              for fantastic design inspiration.
+           I’ve led a variety of end-to-end design initiatives at Bitwarden, a password management startup, and WebMD Health Services, a more established company. I enjoy connecting design decisions to business impact, improving team efficiency, and fostering strong cross-functional collaboration.
+            </p>
+            <p className="text-gray-600 mb-6">
+            I thrive in growth-stage startups, or similar environments, where design maturity and process evolution are key. My strengths in system thinking, UX strategy, and a bias toward action help teams deliver consistent, accessible, and high-quality experiences. I’m especially drawn to companies in healthcare, finance, and HR technology—where design has the power to make a strong impact. 
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
@@ -57,9 +56,9 @@ export function About() {
               </div>
             </div>
           </motion.div>
-          <motion.div className="md:w-1/2" initial={{
+              <motion.div initial={{
           opacity: 0,
-          x: 20
+          x: -20
         }} whileInView={{
           opacity: 1,
           x: 0
@@ -68,20 +67,9 @@ export function About() {
         }} viewport={{
           once: true
         }}>
-            <div className="flex flex-col items-center mb-6">
-              <img src="/headshot.png" alt="Danielle Flinn" className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-white" />
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-[#FFE8D9]">
-              <h4 className="text-lg font-semibold text-gray-800 mb-3">
-                My Design Philosophy
-              </h4>
-              <p className="text-gray-600 italic">
-                "Just as a great meal brings people together, great design
-                creates meaningful connections between users and products. Both
-                require understanding your audience, attention to detail, and a
-                willingness to iterate until it's just right."
-              </p>
-            </div>
+          <div class="flex items-center mb-6 mt-6">
+              <img src="/headshot.png" alt="Danielle Flinn" className="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-white" />
+          </div>
           </motion.div>
         </div>
       </div>

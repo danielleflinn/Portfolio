@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MailIcon, LinkedinIcon, GithubIcon } from 'lucide-react';
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,12 +16,12 @@ export function Footer() {
           </div>
           <div className="flex flex-col md:flex-row items-center">
             <nav className="flex space-x-6 mb-4 md:mb-0 md:mr-8">
-              <a href="#recipes" className="text-gray-600 hover:text-[#F45F2A] text-sm">
+              <Link to="/" className="text-gray-600 hover:text-[#F45F2A] text-sm">
                 My work
-              </a>
-              <a href="#chef" className="text-gray-600 hover:text-[#F45F2A] text-sm">
+              </Link>
+              <Link to="/about" className="text-gray-600 hover:text-[#F45F2A] text-sm">
                 About
-              </a>
+              </Link>
             </nav>
             <div className="flex items-center space-x-4 mb-4 md:mb-0 md:mr-8">
               <a href="mailto:julia.chen@example.com" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="Email">
