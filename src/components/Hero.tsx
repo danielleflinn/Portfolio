@@ -14,13 +14,16 @@ export function Hero() {
         duration: 0.6
       }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
-            Cooking Up <span className="text-[#FF6B35]">Delightful</span> User
+            Cooking Up <span className="text-[#F45F2A]">Delightful</span> User
             Experiences
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-           I’m a Senior Product Designer serving up design solutions that balance user needs, business goals, and engineering workflows. I bring system thinking, process maturity, and excellence to growing design teams (and the kitchen).
+            I'm a Senior Product Designer serving up design solutions that
+            balance user needs, business goals, and engineering workflows. I
+            bring system thinking, process maturity, and excellence to growing
+            design teams (and the kitchen).
           </p>
-          <button type="submit" className="bg-[#FF6B35] hover:bg-[#E85A2A] text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center">
+          <button className="bg-[#F45F2A] hover:bg-[#D94F23] text-black font-semibold tracking-wide px-6 py-3 rounded-lg transition-colors flex items-center justify-center">
             More about me
             <ArrowRight size={18} className="ml-2" />
           </button>{' '}

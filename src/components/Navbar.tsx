@@ -8,7 +8,7 @@ export function Navbar() {
   return <nav className="w-full bg-[#FFFAF5] py-4 px-6 md:px-12 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex-end">
-          <span className="text-[#FF6B35] font-bold text-2xl">
+          <span className="text-[#F45F2A] font-bold text-2xl">
             Danielle Flinn
           </span>
           <span className="hidden md:inline-block text-gray-500 ml-2">
@@ -17,20 +17,20 @@ export function Navbar() {
         </div>
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#recipes" className="text-gray-700 hover:text-[#FF6B35] transition-colors">
+          <a href="#recipes" className="text-gray-700 hover:text-[#F45F2A] transition-colors">
             My work
           </a>
-          <a href="#chef" className="text-gray-700 hover:text-[#FF6B35] transition-colors">
+          <a href="#chef" className="text-gray-700 hover:text-[#F45F2A] transition-colors">
             About
           </a>
           <div className="flex items-center space-x-4 ml-4 pl-4 border-l border-gray-300">
-            <a href="mailto:julia.chen@example.com" className="text-gray-700 hover:text-[#FF6B35] transition-colors" aria-label="Email">
+            <a href="mailto:julia.chen@example.com" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="Email">
               <MailIcon size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#FF6B35] transition-colors" aria-label="LinkedIn">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="LinkedIn">
               <LinkedinIcon size={20} />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#FF6B35] transition-colors" aria-label="GitHub">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="GitHub">
               <GithubIcon size={20} />
             </a>
           </div>
@@ -42,23 +42,23 @@ export function Navbar() {
       </div>
       {/* Mobile Navigation */}
       {isMenuOpen && <div className="md:hidden absolute top-16 left-0 right-0 bg-[#FFFAF5] shadow-md py-4 px-6 flex flex-col space-y-4">
-          <a href="#recipes" className="text-gray-700 hover:text-[#FF6B35] transition-colors" onClick={toggleMenu}>
+          <a href="#recipes" className="text-gray-700 hover:text-[#F45F2A] transition-colors" onClick={toggleMenu}>
             My work
           </a>
-          <a href="#ingredients" className="text-gray-700 hover:text-[#FF6B35] transition-colors" onClick={toggleMenu}>
+          <a href="#ingredients" className="text-gray-700 hover:text-[#F45F2A] transition-colors" onClick={toggleMenu}>
             Skills
           </a>
-          <a href="#chef" className="text-gray-700 hover:text-[#FF6B35] transition-colors" onClick={toggleMenu}>
+          <a href="#chef" className="text-gray-700 hover:text-[#F45F2A] transition-colors" onClick={toggleMenu}>
             About
           </a>
           <div className="flex items-center space-x-4 pt-4 border-t border-gray-300">
-            <a href="mailto:julia.chen@example.com" className="text-gray-700 hover:text-[#FF6B35] transition-colors" aria-label="Email">
+            <a href="mailto:julia.chen@example.com" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="Email">
               <MailIcon size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#FF6B35] transition-colors" aria-label="LinkedIn">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="LinkedIn">
               <LinkedinIcon size={20} />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#FF6B35] transition-colors" aria-label="GitHub">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="GitHub">
               <GithubIcon size={20} />
             </a>
           </div>

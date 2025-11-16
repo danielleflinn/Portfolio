@@ -4,12 +4,12 @@ import { BookOpenIcon } from 'lucide-react';
 import ExtensionCover from '../images/Extension-cover.png';
 export function CaseStudies() {
   const caseStudies = [{
-    title: 'Financial App Redesign',
-    description: 'A complete overhaul of a banking app with a focus on simplifying complex financial data.',
+    title: 'Elevating the Bitwarden Autofill Experience',
+    description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    duration: '3 months',
-    team: '4 people',
-    tools: ['Figma', 'User Interviews', 'Usability Testing', 'Prototyping']
+    duration: '6 months',
+    team: '1 person',
+    tools: ['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']
   }, {
     title: 'Modernizing the Bitwarden Extension',
     description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature.',
@@ -50,7 +50,7 @@ export function CaseStudies() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
-            <BookOpenIcon size={32} className="text-[#FF6B35]" />
+            <BookOpenIcon size={32} className="text-[#F45F2A]" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             My Recipe Book

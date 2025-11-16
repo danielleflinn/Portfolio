@@ -56,17 +56,12 @@ export function RecipeCard({
           </div>
         </div>
         <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-        <div className="mb-4">
-          <h4 className="text-sm font-medium text-gray-700 mb-2">
-            Methods:
-          </h4>
-          <div className="flex flex-wrap gap-2">
-            {tools.map((tool, idx) => <span key={idx} className="bg-[#FFF0E8] text-[#FF6B35] text-xs px-2 py-1 rounded-full">
-                {tool}
-              </span>)}
-          </div>
+        <div className="mb-4 flex flex-wrap gap-2">
+          {tools.map((tool, idx) => <span key={idx} className="bg-[#FFF0E8] text-[#C3471D] text-xs px-2 py-1 rounded-full">
+              {tool}
+            </span>)}
         </div>
-        <button className="w-full bg-[#FFFAF5] hover:bg-[#FFE8D9] text-[#FF6B35] font-medium py-2 rounded-lg transition-colors border border-[#FFD6C2]">
+        <button className="w-full bg-[#FFFAF5] hover:bg-[#FFE8D9] text-[#C3471D] font-medium py-2 rounded-lg transition-colors border border-[#FFD6C2]">
           View full case study
         </button>
       </div>

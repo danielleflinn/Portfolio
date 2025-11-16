@@ -39,7 +39,8 @@ export function Contact() {
             Let's Cook Together
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have an opportunity I can help with? Just want to chat about design or cooking? Reach out, I love connecting with others!
+            Have an opportunity I can help with? Just want to chat about design
+            or cooking? Reach out, I love connecting with others!
           </p>
         </motion.div>
         <motion.div className="max-w-2xl mx-auto bg-[#FFFAF5] p-8 rounded-xl" initial={{
@@ -61,21 +62,21 @@ export function Contact() {
               <label htmlFor="name" className="block text-gray-700 mb-2">
                 Your Name
               </label>
-              <input type="text" id="name" name="name" value={formState.name} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-#FF6B35 focus:border-transparent" required />
+              <input type="text" id="name" name="name" value={formState.name} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F45F2A] focus:border-transparent" required />
             </div>
             <div className="mb-4">
               <label htmlFor="email" className="block text-gray-700 mb-2">
                 Your Email
               </label>
-              <input type="email" id="email" name="email" value={formState.email} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-#FF6B35 focus:border-transparent" required />
+              <input type="email" id="email" name="email" value={formState.email} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F45F2A] focus:border-transparent" required />
             </div>
             <div className="mb-6">
               <label htmlFor="message" className="block text-gray-700 mb-2">
                 Your Message
               </label>
-              <textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-#FF6B35 focus:border-transparent" required></textarea>
+              <textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F45F2A] focus:border-transparent" required></textarea>
             </div>
-            <button type="submit" className="bg-[#FF6B35] hover:bg-[#E85A2A] text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center w-full">
+            <button type="submit" className="bg-[#F45F2A] hover:bg-[#D94F23] text-black font-semibold tracking-wide px-6 py-3 rounded-lg transition-colors flex items-center justify-center w-full">
               <SendIcon size={18} className="mr-2" />
               Send Message
             </button>

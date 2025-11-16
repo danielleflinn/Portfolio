@@ -1,26 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChefHatIcon, PenToolIcon, SparklesIcon, HeartIcon } from 'lucide-react';
+import { ChefHatIcon, PenToolIcon, SparklesIcon, CheckCircleIcon, SettingsIcon } from 'lucide-react';
 export function About() {
-  const skills = [{
-    name: 'User Research',
-    level: 90
-  }, {
-    name: 'Wireframing',
-    level: 85
-  }, {
-    name: 'Prototyping',
-    level: 95
-  }, {
-    name: 'Usability Testing',
-    level: 80
-  }, {
-    name: 'Visual Design',
-    level: 85
-  }, {
-    name: 'Interaction Design',
-    level: 90
-  }];
   return <section id="chef" className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12">
@@ -36,7 +17,7 @@ export function About() {
           once: true
         }}>
             <div className="flex items-center mb-4">
-              <ChefHatIcon size={28} className="text-[#FF6B35] mr-3" />
+              <ChefHatIcon size={28} className="text-[#F45F2A] mr-3" />
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                 The Chef
               </h2>
@@ -45,29 +26,34 @@ export function About() {
               Danielle Flinn
             </h3>
             <p className="text-gray-600 mb-6">
-              I’m a Senior Product Designer serving up design solutions that balance user needs, business goals, and engineering workflows. I bring system thinking, process maturity, and excellence to growing design teams (and the kitchen).
+              I'm a Senior Product Designer serving up design solutions that
+              balance user needs, business goals, and engineering workflows. I
+              bring system thinking, process maturity, and excellence to growing
+              design teams (and the kitchen).
             </p>
             <p className="text-gray-600 mb-6">
-              When I'm not working, you'll find me experimenting
-              with new recipes in my kitchen, exploring a new local restaurant,
-              hiking, or meeting new friends at a social dance. Wherever I go, 
-              I’m curious to understand how the world works and am on the lookout 
-              for fantastic design inspiration. 
-
-              
+              When I'm not working, you'll find me experimenting with new
+              recipes in my kitchen, exploring a new local restaurant, hiking,
+              or meeting new friends at a social dance. Wherever I go, I'm
+              curious to understand how the world works and am on the lookout
+              for fantastic design inspiration.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                <PenToolIcon size={16} className="text-[#FF6B35] mr-2" />
+                <PenToolIcon size={16} className="text-[#F45F2A] mr-2" />
                 <span className="text-gray-700">UX Design</span>
               </div>
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                <SparklesIcon size={16} className="text-[#FF6B35] mr-2" />
+                <SparklesIcon size={16} className="text-[#F45F2A] mr-2" />
                 <span className="text-gray-700">Design Systems</span>
               </div>
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                <HeartIcon size={16} className="text-[#FF6B35] mr-2" />
-                <span className="text-gray-700">Culinary Arts</span>
+                <SettingsIcon size={16} className="text-[#F45F2A] mr-2" />
+                <span className="text-gray-700">DesignOps</span>
+              </div>
+              <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                <CheckCircleIcon size={16} className="text-[#F45F2A] mr-2" />
+                <span className="text-gray-700">Accessibility</span>
               </div>
             </div>
           </motion.div>
@@ -82,30 +68,10 @@ export function About() {
         }} viewport={{
           once: true
         }}>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6" id="ingredients">
-              My Ingredients (Skills)
-            </h3>
-            <div className="space-y-6">
-              {skills.map((skill, index) => <div key={index}>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-gray-700">{skill.name}</span>
-                    <span className="text-[#FF6B35]">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2.5">
-                    <motion.div className="bg-[#FF6B35] h-2.5 rounded-full" initial={{
-                  width: 0
-                }} whileInView={{
-                  width: `${skill.level}%`
-                }} transition={{
-                  duration: 1,
-                  delay: 0.1 * index
-                }} viewport={{
-                  once: true
-                }}></motion.div>
-                  </div>
-                </div>)}
+            <div className="flex flex-col items-center mb-6">
+              <img src="/headshot.png" alt="Danielle Flinn" className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-white" />
             </div>
-            <div className="mt-8 p-6 bg-white rounded-xl shadow-sm border border-[#FFE8D9]">
+            <div className="p-6 bg-white rounded-xl shadow-sm border border-[#FFE8D9]">
               <h4 className="text-lg font-semibold text-gray-800 mb-3">
                 My Design Philosophy
               </h4>

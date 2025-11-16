@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <span className="text-[#FF6B35] font-bold text-xl">
+            <span className="text-[#F45F2A] font-bold text-xl">
               Danielle Flinn
             </span>
             <p className="text-gray-600 text-sm mt-1">
@@ -15,21 +15,21 @@ export function Footer() {
           </div>
           <div className="flex flex-col md:flex-row items-center">
             <nav className="flex space-x-6 mb-4 md:mb-0 md:mr-8">
-              <a href="#recipes" className="text-gray-600 hover:text-[#FF6B35] text-sm">
+              <a href="#recipes" className="text-gray-600 hover:text-[#F45F2A] text-sm">
                 My work
               </a>
-              <a href="#chef" className="text-gray-600 hover:text-[#FF6B35] text-sm">
+              <a href="#chef" className="text-gray-600 hover:text-[#F45F2A] text-sm">
                 About
               </a>
             </nav>
             <div className="flex items-center space-x-4 mb-4 md:mb-0 md:mr-8">
-              <a href="mailto:julia.chen@example.com" className="text-gray-600 hover:text-[#FF6B35] transition-colors" aria-label="Email">
+              <a href="mailto:julia.chen@example.com" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="Email">
                 <MailIcon size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6B35] transition-colors" aria-label="LinkedIn">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="LinkedIn">
                 <LinkedinIcon size={20} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6B35] transition-colors" aria-label="GitHub">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="GitHub">
                 <GithubIcon size={20} />
               </a>
             </div>

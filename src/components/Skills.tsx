@@ -37,13 +37,13 @@ export function Skills() {
             once: true
           }}>
                 <div className="flex items-center mb-4">
-                  <IconComponent size={24} className="text-[#FF6B35] mr-2" />
+                  <IconComponent size={24} className="text-[#F45F2A] mr-2" />
                   <h3 className="text-xl font-bold text-gray-800">
                     {category.title}
                   </h3>
                 </div>
                 <ul className="space-y-2">
-                  {category.items.map((item, itemIndex) => <li key={itemIndex} className="text-gray-600 text-sm pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-[#FF6B35]">
+                  {category.items.map((item, itemIndex) => <li key={itemIndex} className="text-gray-600 text-sm pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-[#F45F2A]">
                       {item}
                     </li>)}
                 </ul>
