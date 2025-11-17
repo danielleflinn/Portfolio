@@ -5,21 +5,21 @@ export function CaseStudies() {
   const caseStudies = [{
     title: 'Elevating the Bitwarden Autofill Experience',
     description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature.',
-    image: "/home/inline-menu-cover.png",
+    image: "/inline-menu-cover.png",
     duration: '6 months',
     team: '1 person',
     tools: ['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']
   }, {
     title: 'Modernizing the Bitwarden Extension',
     description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature.',
-    image: "/home/extension-cover.png",
+    image: "/extension-cover.png",
     duration: '10 months',
     team: '2 people',
     tools: ['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management']
   }, {
     title: 'Unifying the Bitwarden Design Language',
     description: 'Improving user satisfaction and internal design and development experience through establishing an atomic Design System and Component Library.',
-    image: "/home/design-system-cover.png",
+    image: "/design-system-cover.png",
     duration: '3 years',
     team: '3 people',
     tools: ['Design System', 'Component library', 'Storybook', 'Planning workshop', 'Visual design', 'Interaction design', 'Team processes design']

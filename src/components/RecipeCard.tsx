@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ClockIcon, UsersIcon, LayersIcon } from 'lucide-react';
 interface RecipeCardProps {
@@ -19,6 +20,12 @@ export function RecipeCard({
   tools,
   index
 }: RecipeCardProps) {
+  const getPageLink = () => {
+    if (title.includes('Autofill')) return '/inline-menu';
+    if (title.includes('Extension')) return '/extension';
+    if (title.includes('Design Language')) return '/design-system';
+    return '#';
+  };
   return <motion.div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col md:flex-row" initial={{
     opacity: 0,
     y: 20
@@ -33,9 +40,7 @@ export function RecipeCard({
         <img src={image} alt={title} className="w-full h-full object-contain transition-transform bg-[#FFFAF5]" />
       </div>
       <div className="p-4 flex-1 flex flex-col">
-        <h3 className="block text-xl font-bold text-gray-800 mb-2">
-          {title}
-        </h3>
+        <h3 className="block text-xl font-bold text-gray-800 mb-2">{title}</h3>
         <div className="flex justify-between items-center mb-3 text-sm text-gray-600">
           <div className="flex items-center">
             <ClockIcon size={16} className="mr-1" />
@@ -56,9 +61,9 @@ export function RecipeCard({
               {tool}
             </span>)}
         </div>
-        <button className="w-full bg-[#FFFAF5] hover:bg-[#FFE8D9] text-[#C3471D] font-medium py-2 rounded-lg transition-colors border border-[#FFD6C2]">
+        <Link to={getPageLink()} className="w-full bg-[#FFFAF5] hover:bg-[#FFE8D9] text-[#C3471D] font-medium py-2 rounded-lg transition-colors border border-[#FFD6C2] text-center">
           View full case study
-        </button>
+        </Link>
       </div>
     </motion.div>;
 }
