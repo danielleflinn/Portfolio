@@ -2,15 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 export function Education() {
   const educationItems = [{
-    logo: "/image.png",
+    logo: "/about/ewu.png",
     degree: 'Bachelor of Design in User Experience',
     institution: 'Eastern Washington University'
   }, {
-    logo: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=200&h=200&fit=crop',
+    logo: '/about/atomic-design.png',
     degree: 'Design Systems Masterclass',
     institution: 'Brad Frost via Hatch Conference'
   }, {
-    logo: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=200&h=200&fit=crop',
+    logo: '/about/deque.png',
     degree: 'Web Accessibility Curriculum',
     institution: 'Deque Systems, Inc'
   }];

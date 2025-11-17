@@ -16,7 +16,7 @@ export function About() {
         }} viewport={{
           once: true
         }}>
-            <div className="flex items-center mb-4">
+            <div className="max-w-2/3 flex items-center mb-4">
               <ChefHatIcon size={28} className="text-[#F45F2A] mr-3" />
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                 The Chef
@@ -67,8 +67,9 @@ export function About() {
         }} viewport={{
           once: true
         }}>
-          <div class="flex items-center mb-6 mt-6">
-              <img src="/headshot.png" alt="Danielle Flinn" className="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-white" />
+          <div className="flex items-center mb-6 mt-6">
+              <img src="/about/headshot.jpeg" alt="Professional headshot of Danielle Flinn smilling at the camera" 
+              className="w-80 rounded-full object-cover shadow-lg border-4 border-white"/>
           </div>
           </motion.div>
         </div>
