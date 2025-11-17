@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChefHatIcon, PenToolIcon, SparklesIcon, CheckCircleIcon, SettingsIcon } from 'lucide-react';
 export function About() {
-  return <section id="chef" className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">
+  return <section id="about" className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start gap-12">
           <motion.div initial={{
@@ -15,11 +15,11 @@ export function About() {
           duration: 0.6
         }} viewport={{
           once: true
-        }}>
-            <div className="flex items-center mb-4">
+        }} className="lg:mr-12">
+            <div className="flex items-center mb-2">
               <ChefHatIcon size={28} className="text-[#F45F2A] mr-3" />
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                The Chef
+                The Cook
               </h2>
             </div>
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">

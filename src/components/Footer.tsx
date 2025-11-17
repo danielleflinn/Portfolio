@@ -24,13 +24,13 @@ export function Footer() {
               </Link>
             </nav>
             <div className="flex items-center space-x-4 mb-4 md:mb-0 md:mr-8">
-              <a href="mailto:julia.chen@example.com" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="Email">
+              <a href="mailto:contact@dflinn.com" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="Email">
                 <MailIcon size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/danielle-flinn" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="LinkedIn">
                 <LinkedinIcon size={20} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="GitHub">
+              <a href="https://github.com/danielleflinn" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#F45F2A] transition-colors" aria-label="GitHub">
                 <GithubIcon size={20} />
               </a>
             </div>

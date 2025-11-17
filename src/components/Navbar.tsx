@@ -13,7 +13,7 @@ export function Navbar() {
             Danielle Flinn
           </Link>
           <span className="hidden md:inline-block text-gray-500 ml-2">
-            Product Designer & Chef
+            Product Designer & Home Cook
           </span>
         </div>
         {/* Desktop Navigation */}
@@ -25,13 +25,13 @@ export function Navbar() {
             About
           </Link>
           <div className="flex items-center space-x-4 ml-4 pl-4 border-l border-gray-300">
-            <a href="mailto:julia.chen@example.com" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="Email">
+            <a href="mailto:contact@dflinn.com" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="Email">
               <MailIcon size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="LinkedIn">
+            <a href="https://linkedin.com/in/danielle-flinn" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="LinkedIn">
               <LinkedinIcon size={20} />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="GitHub">
+            <a href="https://github.com/danielleflinn" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#F45F2A] transition-colors" aria-label="GitHub">
               <GithubIcon size={20} />
             </a>
           </div>

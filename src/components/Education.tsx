@@ -20,7 +20,7 @@ export function Education() {
           My education
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {educationItems.map((item, index) => <motion.div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow" initial={{
+          {educationItems.map((item, index) => <motion.div key={index} className="bg-white rounded-xl p-6 shadow-sm" initial={{
           opacity: 0,
           y: 20
         }} whileInView={{
