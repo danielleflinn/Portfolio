@@ -30,7 +30,7 @@ export function RecipeCard({
     delay: index * 0.1
   }}>
       <div className="relative h-56 md:h-auto md:w-64 flex-shrink-0 overflow-hidden">
-        <img src={image} alt={title} className="w-full h-full object-contain transition-transform hover:scale-105 duration-500 bg-[#FFFAF5]" />
+        <img src={image} alt={title} className="w-full h-full object-contain transition-transform bg-[#FFFAF5]" />
       </div>
       <div className="p-4 flex-1 flex flex-col">
         <h3 className="block text-xl font-bold text-gray-800 mb-2">

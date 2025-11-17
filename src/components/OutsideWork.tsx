@@ -57,7 +57,7 @@ export function OutsideWork() {
           once: true
         }}>
               <div className="aspect-[4/3] overflow-hidden rounded-lg mb-3">
-                <img src={image.url} alt={image.caption} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={image.url} alt={image.caption} className="w-full h-full object-cover" />
               </div>
               <p className="text-gray-700 text-center">{image.caption}</p>
             </motion.div>)}
