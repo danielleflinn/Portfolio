@@ -2,23 +2,23 @@ import React from 'react';
 import { motion } from 'framer-motion';
 export function OutsideWork() {
   const images = [{
-    url: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop',
-    caption: 'Exploring local trails'
+    url: '/about/smith-rock.jpg',
+    caption: 'Exploring Smith Rock State Park'
   }, {
-    url: 'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=800&h=600&fit=crop',
+    url: '/about/wedding.jpg',
+    caption: "My boyfriend, now fiancé, and I at our friend's wedding"
+  }, {
+    url: '/about/scones.jpg',
+    caption: 'Homemade gluten free blueberry almond scones'
+  }, {
+    url: '/about/dancing.jpg',
     caption: 'Social dancing with friends'
   }, {
-    url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop',
-    caption: 'Volunteering with students'
+    url: '/about/woods.png',
+    caption: 'Finding inspiration at Redwood National Park'
   }, {
-    url: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop',
-    caption: 'Cooking new recipes'
-  }, {
-    url: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop',
-    caption: 'Finding inspiration in nature'
-  }, {
-    url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
-    caption: 'Discovering great design'
+    url: '/about/ramen.jpg',
+    caption: 'A second attempt at making gluten free ramen'
   }];
   return <section className="w-full py-16 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
