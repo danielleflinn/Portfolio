@@ -1,0 +1,514 @@
+import React from 'react';
+import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer';
+import { CaseStudySummary } from '../components/CaseStudySummary';
+import { CaseStudyContent } from '../components/CaseStudyContent';
+export function BitwardenAutofillExperiencePage() {
+  const sections = [{
+    title: 'Current State of Autofill and Save',
+    content: <>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Autofill with Bitwarden
+          </h3>
+          <p className="mb-4">
+            Before this initiative users could autofill 4 different ways:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>Opening the extension and autofill from "Tab"</li>
+            <li>Using a right click browser context menu</li>
+            <li>Turning on the "autofill on page load" setting</li>
+            <li>Using a keyboard shortcut</li>
+          </ul>
+          <p className="mb-4">
+            These existing autofill methods were not surfaced in the app's core
+            UI leaving users to struggle with moving across the screen to open
+            the extension every-time they needed to autofill.
+          </p>
+          <p className="mb-8">
+            The most usable options, autofill on page load and the keyboard
+            shortcut, relied on the user discovering these methods in their
+            extension settings within an overwhelming page.
+          </p>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Save to Bitwarden
+          </h3>
+          <p className="mb-4">
+            When it came to saving passwords to Bitwarden, there were 2
+            workflows users were using; but both had usability issues.
+          </p>
+          <ol className="list-decimal pl-6 mb-6 space-y-4">
+            <li>
+              <strong>
+                Fill and submit a form, then select "save" on a Bitwarden prompt
+              </strong>{' '}
+              similar to the prompt of a built in browser's password manger.
+              <p className="mt-2 text-sm italic">
+                Demonstration of using the save prompt to add credentials to
+                Bitwarden after submitting a create account form.
+              </p>
+            </li>
+          </ol>
+          <p className="mb-4">
+            While this 1st method was usable and intuitive to users, there were
+            gaps:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>
+              After submitting, the Bitwarden notification prompt was not
+              reliable; leading to users creating new accounts within a
+              website's form, and then needing to re-enter the information
+              manually in Bitwarden.
+            </li>
+            <li>
+              When the prompt did appear, the placement on the page was often
+              not apparent to users.
+            </li>
+            <li>
+              When users did see the prompt, they could became confused by the
+              options presented.
+            </li>
+          </ul>
+          <p className="mb-4">
+            These lead many users to moving toward a work around solution,
+            presented in this 2nd workflow:
+          </p>
+          <ol start={2} className="list-decimal pl-6 mb-6 space-y-4">
+            <li>
+              <strong>
+                Users would create new logins manually in Bitwarden, then they
+                would autofill create account forms with the new login
+                information.
+              </strong>
+              <p className="mt-2 text-sm italic">
+                Demonstration of users manually creating a login in the
+                extension and then autofilling it into a create account from.
+              </p>
+            </li>
+          </ol>
+          <p>
+            While this was a more reliable flow, it had multiple steps that felt
+            overly complex to users. Many users reported it felt intuitive–it
+            did not build on new user's learned behaviors from years of creating
+            accounts and logging into sites directly from a web page.
+          </p>
+        </>
+  }, {
+    title: 'User Feedback',
+    content: <>
+          <p className="mb-4">
+            Users often compared the Bitwarden way to save and fill items to
+            competition, citing the simple "autofill menu" in competitors was
+            the only thing they were missing with Bitwarden.
+          </p>
+          <p>
+            Some even switch away from Bitwarden due to this missing experience.
+          </p>
+        </>
+  }, {
+    title: 'Competitive Analysis',
+    content: <>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Autofill
+          </h3>
+          <p className="mb-4">
+            All major competitors offered an in page autofill experience similar
+            to the built in browser's by:
+          </p>
+          <ul className="list-disc pl-6 mb-8 space-y-2">
+            <li>Showing an icon in field</li>
+            <li>Showing matching items within a menu</li>
+            <li>
+              Allowing users to select the item without leaving their learned
+              workflow
+            </li>
+          </ul>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Saving Passwords
+          </h3>
+          <p className="mb-4">
+            All major competitors offered multiple ways to save a new password:
+          </p>
+          <ul className="list-disc pl-6 mb-4 space-y-2">
+            <li>From their in page menu before submission</li>
+            <li>A popup prompt after form submission</li>
+          </ul>
+          <p>
+            This allowed users 2 opportunities to save their
+            passwords–increasing the likelihood that they would complete the
+            vital task.
+          </p>
+        </>
+  }, {
+    title: 'Business Goals',
+    content: <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-[#FFF5F0] p-6 rounded-lg">
+            <h4 className="font-semibold text-lg text-gray-800 mb-2">
+              Increase user adoption
+            </h4>
+            <p className="text-gray-700">
+              Accelerate when users experience autofill
+            </p>
+          </div>
+          <div className="bg-[#FFF5F0] p-6 rounded-lg">
+            <h4 className="font-semibold text-lg text-gray-800 mb-2">
+              Reduce user friction
+            </h4>
+            <p className="text-gray-700">
+              Improve discoverability and usability of save and autofill
+            </p>
+          </div>
+          <div className="bg-[#FFF5F0] p-6 rounded-lg">
+            <h4 className="font-semibold text-lg text-gray-800 mb-2">
+              Enhance competitive position
+            </h4>
+            <p className="text-gray-700">
+              Improve approachability of autofill so it is on par or better than
+              competition
+            </p>
+          </div>
+        </div>
+  }, {
+    title: 'Timeline',
+    content: <div className="space-y-4">
+          <div className="border-l-4 border-[#F45F2A] pl-6 py-2">
+            <h4 className="font-semibold text-gray-800">Q3 2023</h4>
+            <p className="text-gray-700">
+              Discovery, concepts, gaining product support, high fidelity MVP
+              prototypes
+            </p>
+          </div>
+          <div className="border-l-4 border-[#F45F2A] pl-6 py-2">
+            <h4 className="font-semibold text-gray-800">Q4 2023</h4>
+            <p className="text-gray-700">
+              Development, security review, user testing, refinement and release
+            </p>
+          </div>
+          <div className="border-l-4 border-gray-400 pl-6 py-2">
+            <h4 className="font-semibold text-gray-800">Q1 2024</h4>
+            <p className="text-gray-700">
+              Project paused due to other company priorities (Chrome MV3 API
+              update)
+            </p>
+          </div>
+          <div className="border-l-4 border-[#F45F2A] pl-6 py-2">
+            <h4 className="font-semibold text-gray-800">Q2 2024</h4>
+            <p className="text-gray-700">
+              Designing for V2: password generation, autofill for cards and
+              identities
+            </p>
+          </div>
+          <div className="border-l-4 border-[#F45F2A] pl-6 py-2">
+            <h4 className="font-semibold text-gray-800">Q3 2024</h4>
+            <p className="text-gray-700">
+              V2 development and release, MVP and V2 design for prompt to save
+              messages
+            </p>
+          </div>
+          <div className="border-l-4 border-[#F45F2A] pl-6 py-2">
+            <h4 className="font-semibold text-gray-800">Q4 2024</h4>
+            <p className="text-gray-700">MVP prompt to save released</p>
+          </div>
+          <div className="border-l-4 border-[#F45F2A] pl-6 py-2">
+            <h4 className="font-semibold text-gray-800">Q1 2025</h4>
+            <p className="text-gray-700">V2 prompt to save in development</p>
+          </div>
+        </div>
+  }, {
+    title: 'Identifying User Journeys',
+    content: <>
+          <p className="mb-4">
+            From the competitive analysis and user feedback, I ideated all
+            possible user journeys I expected users would want to see in this
+            feature.
+          </p>
+          <p className="mb-4">
+            From the brainstormed list, I prioritized each feature based on the
+            value it would deliver to the user.
+          </p>
+          <p className="mb-4">
+            This resulted in the following primary user journeys:
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Logging in to a website</li>
+            <li>Creating a new account on a website</li>
+            <li>Saving a new password to Bitwarden</li>
+            <li>Updating an existing password in Bitwarden</li>
+            <li>Filling out payment or billing forms</li>
+          </ul>
+        </>
+  }, {
+    title: 'Prioritizing User Journeys',
+    content: <>
+          <p className="mb-4">
+            The initiative's Product Manager and I aligned on focusing the MVP
+            work on the core need:{' '}
+            <strong>autofilling credentials when signing into a website</strong>
+          </p>
+          <p className="mb-4">
+            I then identified the UI states I would need to design for and
+            mapped these to a userflow:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>Account unlocked (happy path)</li>
+            <li>Account locked</li>
+            <li>Nothing saved for website</li>
+          </ul>
+          <p className="mb-4">
+            I identified 2 opportunities to improve the MVP further if
+            development capacity allowed:
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              Prompt to save a new account in Bitwarden when nothing is saved
+            </li>
+            <li>
+              Option to quickly launch an item's details of matching items
+            </li>
+          </ul>
+        </>
+  }, {
+    title: 'UI Iteration',
+    content: <p>
+          The first set of UI iterations focused on trying to create a framework
+          that could scale to support the additional features identified in
+          discovery. Ultimately, I realized these ideas muddled the UI and I
+          needed to define a simpler experience to support that core user
+          journey I'd identified.
+        </p>
+  }, {
+    title: 'Final Direction',
+    content: <>
+          <p className="mb-4">
+            The final design direction took a simpler approach to focus on
+            delivering the key action for autofilling log in forms as clearly as
+            possible
+          </p>
+          <p className="mb-6">
+            While still allowing for additional functionality to be built upon
+            it in followup releases.
+          </p>
+          <div className="bg-[#FFFAF5] p-6 rounded-lg mb-4">
+            <p className="text-sm text-gray-600 italic">
+              Initial MVP autofill menu design showing the 3 UI's needed:
+              account locked, matching logins, and no matching logins
+            </p>
+          </div>
+          <div className="bg-[#FFFAF5] p-6 rounded-lg">
+            <p className="text-sm text-gray-600 italic">
+              The final MVP released to users showing a "view details" quick
+              link icon button and a prompt to create a new item in Bitwarden
+              when there are no matching logins
+            </p>
+          </div>
+        </>
+  }, {
+    title: 'Expanding Autofill',
+    content: <>
+          <p className="mb-4">
+            While the development team built out the experience for the login
+            flows I continued designing for the V2 user journeys:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>
+              Filling out contact information in registration or billing forms
+            </li>
+            <li>Filling out payment information in billing forms</li>
+            <li>
+              Creating strong unique passwords to autofill registration forms
+            </li>
+          </ul>
+          <div className="bg-[#FFFAF5] p-6 rounded-lg mb-4">
+            <p className="text-sm text-gray-600 italic">
+              V2 designs for autofilling identities (contact information) and
+              payment methods
+            </p>
+          </div>
+          <div className="bg-[#FFFAF5] p-6 rounded-lg mb-4">
+            <p className="text-sm text-gray-600 italic">
+              Userflow for creating a new account on a website using the new V2
+              inline autofill of contact information and password generation
+            </p>
+          </div>
+          <div className="bg-[#FFFAF5] p-6 rounded-lg">
+            <p className="text-sm text-gray-600 italic">
+              Userflow for updating passwords using the new V2 inline password
+              generator
+            </p>
+          </div>
+        </>
+  }, {
+    title: 'User Testing',
+    content: <>
+          <p className="mb-6">
+            I conducted user testing with an early development proof of concept,
+            while the engineering team wrapped up a security review and final
+            bug fixes. Testing with the actual product allowed me to get
+            accurate insights from the experience to help drive further
+            improvements.
+          </p>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Research Goal
+          </h3>
+          <p className="mb-6">
+            Establish baseline metrics for how usable the autofill experience is
+            and gather insights to drive additional iterations.
+          </p>
+          <div className="bg-[#FFFAF5] p-6 rounded-lg mb-6">
+            <p className="text-sm text-gray-600 italic">
+              Screenshot of a user testing session right before they discover
+              the autofill menu
+            </p>
+          </div>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            User Testing Tasks:
+          </h3>
+          <ul className="list-disc pl-6 mb-8 space-y-2">
+            <li>Turn on the feature</li>
+            <li>Create a new account & save</li>
+            <li>Sign in/autofill a new account</li>
+            <li>Save an existing account's credentials</li>
+            <li>Identify correct email from 2 matching logins</li>
+            <li>Autofill with account locked</li>
+          </ul>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Testing Results
+          </h3>
+          <div className="bg-[#E8F5E9] p-6 rounded-lg mb-6">
+            <p className="text-lg font-semibold text-gray-800 mb-2">
+              System Usability Score: 88
+            </p>
+            <p className="text-gray-700">
+              Higher than the industry average of 68
+            </p>
+          </div>
+          <h4 className="text-xl font-semibold text-gray-800 mb-3">
+            Insights to improve autofill menu:
+          </h4>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>
+              Users reported turning on the feature was cumbersome and expected
+              it to be on by default. Providing me with data to support my
+              request to release the feature on by default for new users.
+            </li>
+            <li>
+              The obfuscated email, (requested by security team) caused friction
+              when multiple items matched a website. Providing me with data to
+              educate the company on the impacts of the security precaution.
+            </li>
+          </ul>
+          <h4 className="text-xl font-semibold text-gray-800 mb-3">
+            Insights to improve save prompt:
+          </h4>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Users often missed the prompt</li>
+            <li>
+              Users reported the options presented in the prompt were confusing
+            </li>
+            <li>
+              User saving with the prompt were unsure if the password was
+              actually saved
+            </li>
+          </ul>
+        </>
+  }, {
+    title: 'Applying Results',
+    content: <>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            MVP Save to Bitwarden Prompt
+          </h3>
+          <p className="mb-4">
+            Insights from user testing helped drive additional improvements,
+            including a redesign of the save and update prompts. Based on the
+            testing results I knew I needed to: increase the reliability,
+            visibility, and clarity of the prompt and improve user's confidence
+            in it.
+          </p>
+          <p className="mb-4">
+            To keep the scope low and deliver value quickly, I focused on making
+            small changes to improve the experience, resulting in:
+          </p>
+          <ul className="list-disc pl-6 mb-8 space-y-2">
+            <li>
+              Increased visibility of the prompt by updating the placement of
+              the prompt into a more intuitive location–the top right to match
+              competitors and built in browser notifications.
+            </li>
+            <li>
+              Improve user confidence in the product by adding confirmation
+              messaging after a successful save
+            </li>
+            <li>
+              Increase the reliability of the prompt through technical
+              improvements to when it is triggered
+            </li>
+          </ul>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Redesigned Save to Bitwarden Prompt
+          </h3>
+          <p className="mb-4">
+            While the MVP update resolve much of the user friction identified,
+            it did not resolve the unclarity of the options presented in the UI.
+            For resolving this issue, a UI update was prioritized.
+          </p>
+          <p className="mb-6">
+            This full redesign updated the visual look and feel to highlight
+            primary actions better, and matched more modern design principles
+            now in use throughout the extension's pages.
+          </p>
+          <p className="mb-6">
+            The redesign also created a more scalable experience that Bitwarden
+            planned to use for additional enterprise features.
+          </p>
+          <div className="bg-[#FFFAF5] p-6 rounded-lg">
+            <p className="text-sm text-gray-600 italic mb-4">
+              Bringing all the improvements together, in the video below I show
+              the full user journey for creating and saving a new account to
+              Bitwarden:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-sm text-gray-700">
+              <li>
+                Using the autofill contact information to fill the email field
+              </li>
+              <li>
+                Using the password generation feature to fill a strong password
+              </li>
+              <li>
+                Using either of the "save to Bitwarden" prompts to save to
+                Bitwarden
+              </li>
+              <li>
+                Displaying the confirmation UI to improve user confidence and
+                delight
+              </li>
+            </ul>
+            <p className="text-xs text-gray-500 mt-4">
+              Demonstration of a user creating a new account using the Bitwarden
+              autofill and save features
+            </p>
+          </div>
+        </>
+  }, {
+    title: 'Impact',
+    content: <div className="bg-gradient-to-br from-[#FFF5F0] to-[#FFE8D9] p-8 rounded-lg">
+          <p className="text-lg text-gray-800 leading-relaxed">
+            This initiative greatly improved autofill discoverability,
+            usability, and user satisfaction. Users responded overwhelmingly
+            positive to the initial launch of the autofill menu and the followup
+            work.
+          </p>
+          <p className="text-lg text-gray-800 leading-relaxed mt-4">
+            Demonstrating how investing in user experience leads to sales
+            expansion and improved retention, as improvements made during the
+            project empowered the sales team land a large enterprise deal.
+          </p>
+        </div>
+  }];
+  return <div className="w-full min-h-screen bg-[#FFFAF5]">
+      <Navbar />
+      <main className="w-full">
+        <CaseStudySummary title="Elevating the Bitwarden Autofill Experience" description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature." background="The Bitwarden password manager extension had several ways for users to save and fill their logins, but they were not discoverable or intuitive to users. This poor experience led many users to abandon the product in favor of competitors." timeline="6 months" role="Lead Product Designer" methods={['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']} impact="Delivered the most requested feature, significantly improving user satisfaction and adoption rates" image="/inline-menu-cover.png" />
+        <CaseStudyContent sections={sections} />
+      </main>
+      <Footer />
+    </div>;
+}

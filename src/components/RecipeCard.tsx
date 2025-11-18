@@ -21,9 +21,9 @@ export function RecipeCard({
   index
 }: RecipeCardProps) {
   const getPageLink = () => {
-    if (title.includes('Autofill')) return '/inline-menu';
-    if (title.includes('Extension')) return '/extension';
-    if (title.includes('Design Language')) return '/design-system';
+    if (title.includes('Autofill')) return '/bitwarden-autofill-experience';
+    if (title.includes('Extension')) return '/bitwarden-extension-redesign';
+    if (title.includes('Design Language')) return '/bitwarden-design-system';
     return '#';
   };
   return <motion.div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col md:flex-row" initial={{
