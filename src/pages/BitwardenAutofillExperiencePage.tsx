@@ -19,8 +19,13 @@ export function BitwardenAutofillExperiencePage() {
             <li>Turning on the "autofill on page load" setting</li>
             <li>Using a keyboard shortcut</li>
           </ul>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/1-current-autofill-methods.png" alt="Current autofill methods in Bitwarden" className="w-full h-auto" />
+          <div className="flex gap-6">
+            <div className="my-8 rounded-lg overflow-hidden shadow-md ">
+              <img src="extension-autofill/1-legacy-autofill.png" alt="Current autofill methods in Bitwarden" className="w-full h-auto" />
+            </div>
+            <div className="my-8 rounded-lg overflow-hidden shadow-md ">
+              <img src="extension-autofill/2-legacy-settings.png" alt="Current autofill methods in Bitwarden" className="w-full h-auto" />
+            </div>
           </div>
           <p className="mb-4">
             These existing autofill methods were not surfaced in the app's core
@@ -48,7 +53,7 @@ export function BitwardenAutofillExperiencePage() {
             </li>
           </ol>
           <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/2-save-prompt-workflow.png" alt="Demonstration of using the save prompt to add credentials to Bitwarden" className="w-full h-auto" />
+            <img src="/extension-autofill/3-legacy-prompt.png" alt="Demonstration of using the save prompt to add credentials to Bitwarden" className="w-full h-auto" />
           </div>
           <p className="mb-4">
             While this 1st method was usable and intuitive to users, there were
@@ -84,7 +89,7 @@ export function BitwardenAutofillExperiencePage() {
             </li>
           </ol>
           <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/3-manual-create-workflow.png" alt="Demonstration of users manually creating a login in the extension" className="w-full h-auto" />
+            <img src="/extension-autofill/4-manual-create.png" alt="Demonstration of users manually creating a login in the extension" className="w-full h-auto" />
           </div>
           <p>
             While this was a more reliable flow, it had multiple steps that felt
@@ -104,6 +109,9 @@ export function BitwardenAutofillExperiencePage() {
           <p>
             Some even switch away from Bitwarden due to this missing experience.
           </p>
+          <div className="my-8 rounded-lg overflow-hidden shadow-md">
+            <img src="/extension-autofill/5-user-quotes.png" alt="5 user quotes highlighting the usability of autofill and save" className="w-full h-auto" />
+          </div>
         </>
   }, {
     title: 'Competitive Analysis',
@@ -123,6 +131,9 @@ export function BitwardenAutofillExperiencePage() {
               workflow
             </li>
           </ul>
+          <div className="my-8 rounded-lg overflow-hidden shadow-md">
+            <img src="/extension-autofill/6-competitor-autofill.png" alt="screenshot of 4 competitors autofill menus" className="w-full h-auto" />
+          </div>
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Saving Passwords
           </h3>
@@ -138,6 +149,9 @@ export function BitwardenAutofillExperiencePage() {
             passwords–increasing the likelihood that they would complete the
             vital task.
           </p>
+          <div className="my-8 rounded-lg overflow-hidden shadow-md">
+            <img src="/extension-autofill/7-competitor-save.png" alt="screenshot of 4 competitors save prompts" className="w-full h-auto" />
+          </div>
         </>
   }, {
     title: 'Business Goals',
@@ -236,6 +250,9 @@ export function BitwardenAutofillExperiencePage() {
             <li>Updating an existing password in Bitwarden</li>
             <li>Filling out payment or billing forms</li>
           </ul>
+          <div className="my-8 rounded-lg overflow-hidden shadow-md">
+            <img src="/extension-autofill/8-journey.png" alt="User flow diagram for autofill states" className="w-full h-auto" />
+          </div>
         </>
   }, {
     title: 'Prioritizing User Journeys',
@@ -255,7 +272,7 @@ export function BitwardenAutofillExperiencePage() {
             <li>Nothing saved for website</li>
           </ul>
           <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/4-user-flow-diagram.png" alt="User flow diagram for autofill states" className="w-full h-auto" />
+            <img src="/extension-autofill/9-userflow-diagram.png" alt="User flow diagram for autofill states" className="w-full h-auto" />
           </div>
           <p className="mb-4">
             I identified 2 opportunities to improve the MVP further if
@@ -281,7 +298,7 @@ export function BitwardenAutofillExperiencePage() {
             core user journey I'd identified.
           </p>
           <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/5-ui-iterations.png" alt="UI iteration explorations" className="w-full h-auto" />
+            <img src="/extension-autofill/10-ui-iteration.png" alt="UI iteration explorations" className="w-full h-auto" />
           </div>
         </>
   }, {
@@ -296,15 +313,15 @@ export function BitwardenAutofillExperiencePage() {
             While still allowing for additional functionality to be built upon
             it in followup releases.
           </p>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/6-mvp-designs.png" alt="Initial MVP autofill menu design showing the 3 UI states" className="w-full h-auto" />
+          <div className="my-8 rounded-lg overflow-hidden shadow-md pb-4">
+            <img src="/extension-autofill/11-final-password-fill.png" alt="Initial MVP autofill menu design showing the 3 UI states" className="w-full h-auto" />
             <p className="text-sm text-gray-600 italic mt-4 text-center">
               Initial MVP autofill menu design showing the 3 UI's needed:
               account locked, matching logins, and no matching logins
             </p>
           </div>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/7-final-mvp.png" alt="Final MVP released to users" className="w-full h-auto" />
+          <div className="my-8 rounded-lg overflow-hidden shadow-md pb-4">
+            <img src="/extension-autofill/11-final-password-fill2.png" alt="Final MVP released to users" className="w-full h-auto" />
             <p className="text-sm text-gray-600 italic mt-4 text-center">
               The final MVP released to users showing a "view details" quick
               link icon button and a prompt to create a new item in Bitwarden
@@ -328,22 +345,22 @@ export function BitwardenAutofillExperiencePage() {
               Creating strong unique passwords to autofill registration forms
             </li>
           </ul>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/8-v2-designs.png" alt="V2 designs for autofilling identities and payment methods" className="w-full h-auto" />
+          <div className="my-8 rounded-lg overflow-hidden shadow-md pb-4">
+            <img src="/extension-autofill/12-final-cards-ids.png" alt="V2 designs for autofilling identities and payment methods" className="w-full h-auto" />
             <p className="text-sm text-gray-600 italic mt-4 text-center">
               V2 designs for autofilling identities (contact information) and
               payment methods
             </p>
           </div>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/9-create-account-flow.png" alt="Userflow for creating a new account" className="w-full h-auto" />
+          <div className="my-8 rounded-lg overflow-hidden shadow-md pb-4">
+            <img src="/extension-autofill/12-final-generate.png" alt="Userflow for creating a new account" className="w-full h-auto" />
             <p className="text-sm text-gray-600 italic mt-4 text-center">
               Userflow for creating a new account on a website using the new V2
               inline autofill of contact information and password generation
             </p>
           </div>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/10-update-password-flow.png" alt="Userflow for updating passwords" className="w-full h-auto" />
+          <div className="my-8 rounded-lg overflow-hidden shadow-md pb-4">
+            <img src="/extension-autofill/13-final-generate-change.png" alt="Userflow for updating passwords" className="w-full h-auto" />
             <p className="text-sm text-gray-600 italic mt-4 text-center">
               Userflow for updating passwords using the new V2 inline password
               generator
@@ -367,8 +384,8 @@ export function BitwardenAutofillExperiencePage() {
             Establish baseline metrics for how usable the autofill experience is
             and gather insights to drive additional iterations.
           </p>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/11-user-testing.png" alt="Screenshot of a user testing session" className="w-full h-auto" />
+          <div className="my-8 rounded-lg overflow-hidden shadow-md pb-4">
+            <img src="/extension-autofill/14-user-test.png" alt="Screenshot of a user testing session" className="w-full h-auto" />
             <p className="text-sm text-gray-600 italic mt-4 text-center">
               Screenshot of a user testing session right before they discover
               the autofill menu
@@ -458,7 +475,7 @@ export function BitwardenAutofillExperiencePage() {
             </li>
           </ul>
           <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/12-mvp-save-prompt.png" alt="MVP save prompt improvements" className="w-full h-auto" />
+            <img src="/extension-autofill/15-legacy-save-prompt.png" alt="MVP save prompt improvements" className="w-full h-auto" />
           </div>
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Redesigned Save to Bitwarden Prompt
@@ -478,15 +495,14 @@ export function BitwardenAutofillExperiencePage() {
             planned to use for additional enterprise features.
           </p>
           <div className="my-8 rounded-lg overflow-hidden shadow-md">
-            <img src="/extension-autofill/13-redesigned-prompt.png" alt="Redesigned save prompt" className="w-full h-auto" />
+            <img src="/extension-autofill/16-final-save-prompt.png" alt="Redesigned save prompt" className="w-full h-auto" />
           </div>
-          <div className="my-8 rounded-lg overflow-hidden shadow-md bg-[#FFFAF5] p-6">
-            <img src="/extension-autofill/14-full-journey.png" alt="Full user journey demonstration" className="w-full h-auto rounded" />
-            <p className="text-sm text-gray-600 italic mt-4">
+          <div className="my-8 rounded-lg overflow-hidden shadow-md bg-[#FFFAF5] p-6">         
+            <p className="text-sm text-gray-600">
               Bringing all the improvements together, the full user journey for
               creating and saving a new account to Bitwarden:
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-sm text-gray-700 mt-3">
+            <ul className="list-disc pl-6 space-y-2 text-sm text-gray-700 mt-3 mb-4">
               <li>
                 Using the autofill contact information to fill the email field
               </li>
@@ -502,11 +518,15 @@ export function BitwardenAutofillExperiencePage() {
                 delight
               </li>
             </ul>
+            <video width="full" height="240" controls className="rounded-md">
+            <source src="/extension-autofill/autofill-notification-demo.mp4" type="video/mp4"></source>
+            </video>   
           </div>
         </>
   }, {
     title: 'Impact',
     content: <div className="bg-gradient-to-br from-[#FFF5F0] to-[#FFE8D9] p-8 rounded-lg">
+          <img src="/extension-autofill/17-final-user-quotes.png" alt="5 user quotes from the feature release" className="w-full h-auto rounded mb-4" />
           <p className="text-lg text-gray-800 leading-relaxed">
             This initiative greatly improved autofill discoverability,
             usability, and user satisfaction. Users responded overwhelmingly
@@ -523,7 +543,7 @@ export function BitwardenAutofillExperiencePage() {
   return <div className="w-full min-h-screen bg-[#FFFAF5]">
       <Navbar />
       <main className="w-full">
-        <CaseStudySummary title="Elevating the Bitwarden Autofill Experience" description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature." background="The Bitwarden password manager extension had several ways for users to save and fill their logins, but they were not discoverable or intuitive to users. This poor experience led many users to abandon the product in favor of competitors." timeline="6 months" role="Lead Product Designer" methods={['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']} impact="Delivered the most requested feature, significantly improving user satisfaction and adoption rates" image="/inline-menu-cover.png" />
+        <CaseStudySummary title="Elevating the Bitwarden Autofill Experience" description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill through delivering the #1 community requested feature." background="The Bitwarden password manager extension had several ways for users to save and fill their logins, but they were not discoverable or intuitive to users. This poor experience led many users to abandon the product in favor of competitors." timeline="6 months" role="Lead Product Designer" methods={['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']} impact="Delivered the most requested feature, significantly improving user satisfaction and adoption rates" image="/inline-menu-cover.png" />
         <CaseStudyContent sections={sections} />
       </main>
       <Footer />

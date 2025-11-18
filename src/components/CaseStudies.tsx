@@ -4,14 +4,14 @@ import { BookOpenIcon } from 'lucide-react';
 export function CaseStudies() {
   const caseStudies = [{
     title: 'Elevating the Bitwarden Autofill Experience',
-    description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature.',
+    description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill through delivering the #1 community requested feature.',
     image: "/inline-menu-cover.png",
     duration: '6 months',
     team: '1 person',
     tools: ['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']
   }, {
     title: 'Modernizing the Bitwarden Extension',
-    description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature.',
+    description: 'Improving user satisfaction and adoption by modernizing the Bitwarden extension interface and making password management more approachable.',
     image: "/extension-cover.png",
     duration: '10 months',
     team: '2 people',
@@ -25,9 +25,9 @@ export function CaseStudies() {
     tools: ['Design System', 'Component library', 'Storybook', 'Planning workshop', 'Visual design', 'Interaction design', 'Team processes design']
   }];
   return <section id="recipes" className="w-full py-16 px-6 md:px-12 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="flex flex-col items-center max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center items-center mb-4">
             <BookOpenIcon size={32} className="text-[#F45F2A]" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
@@ -39,7 +39,7 @@ export function CaseStudies() {
             companies.
           </p>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 max-w-5xl">
           {caseStudies.map((study, index) => <RecipeCard key={index} title={study.title} description={study.description} image={study.image} duration={study.duration} team={study.team} tools={study.tools} index={index} />)}
         </div>
       </div>

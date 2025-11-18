@@ -14,7 +14,7 @@ export function OutsideWork() {
     url: "/dancing.jpg",
     caption: 'Social dancing with friends'
   }, {
-    url: '/about/woods.png',
+    url: '/woods.png',
     caption: 'Finding inspiration at Redwood National Park'
   }, {
     url: "/ramen.jpg",

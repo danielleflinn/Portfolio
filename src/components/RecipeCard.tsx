@@ -36,7 +36,7 @@ export function RecipeCard({
     duration: 0.5,
     delay: index * 0.1
   }}>
-      <div className="relative h-56 md:h-auto md:w-64 flex-shrink-0 overflow-hidden">
+      <div className="relative h-96 md:h-auto md:w-96 flex-shrink-0 overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-contain transition-transform bg-[#FFFAF5]" />
       </div>
       <div className="p-4 flex-1 flex flex-col">

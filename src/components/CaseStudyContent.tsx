@@ -11,7 +11,7 @@ export function CaseStudyContent({
   sections
 }: CaseStudyContentProps) {
   return <div className="w-full bg-white py-16 px-6 md:px-12">
-      <div className="max-w-4xl mx-auto space-y-16">
+      <div className="max-w-3xl mx-auto space-y-16">
         {sections.map((section, index) => <motion.section key={index} initial={{
         opacity: 0,
         y: 20
