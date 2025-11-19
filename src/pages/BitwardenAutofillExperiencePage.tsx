@@ -48,44 +48,50 @@ export function BitwardenAutofillExperiencePage() {
             </p>
           </div>
           </CaseStudySection>
-          <CaseStudySection header="Problem" subheader="Autofill and save methods were unreliable and created friction, causing users to turn to competitors instead of Bitwarden." columns={3} id="problem">
-          <div>
-            <p className="font-medium text-3xl text-gray-600 mb-2"> 1 </p>
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">
-              Fragmented Autofill Experience
-            </h3>
-            <p className="text-gray-700">
-            Users relied on four disconnected autofill methods—extension tab, 
-            context menu, page-load autofill, or keyboard shortcuts. None 
-            appeared directly in the page, forcing users to move between form 
-            fields and the toolbar, slowing them down and making the experience 
-            feel outdated.
-            </p>
+          <CaseStudySection header="Problem" subheader="Autofill and save methods were unreliable and created friction, causing users to turn to competitors instead of Bitwarden." columns={2} id="problem">
+          <div className="grid grid-cols gap-6">
+            <div className="max-w-2xl">
+              <p className="font-medium text-3xl text-gray-600 mb-2"> 1 </p>
+              <h3 className="font-semibold text-lg text-gray-800 mb-2">
+                Fragmented Autofill Experience
+              </h3>
+              <p className="text-gray-700">
+              Existing autofill methods were not surfaced in the app's core UI or within the page,
+              forcing users to move between form fields and the browser toolbar, slowing them 
+              down and making the experience feel outdated.
+              </p>
+            </div>
+            <div className="max-w-2xl">
+              <p className="font-medium text-3xl text-gray-600 mb-2"> 2 </p>
+              <h3 className="font-semibold text-lg text-gray-800 mb-2">
+                Unreliable Password-Saving Flows
+              </h3>
+              <p className="text-gray-700">
+              Bitwarden’s save prompt often failed to appear, leading users to 
+              manually create login items before filling out registration forms. 
+              This workaround increased effort, reduced trust, and caused 
+              frustration during one of the most essential tasks in the product.
+              </p>
+            </div>
+            <div className="max-w-2xl">
+              <p className="font-medium text-3xl text-gray-600 mb-2"> 3 </p>
+              <h3 className="font-semibold text-lg text-gray-800 mb-2">
+              User Signals & Competitive Gaps
+              </h3>
+              <p className="text-gray-700">
+              Users consistently reported frustration with Bitwarden’s missing 
+              in-page menu and frequently cited competitors like LastPass and 
+              1Password as having a superior autofill workflow. Many said the 
+              lack of this feature was enough to prevent adoption—or push them 
+              to switch tools entirely.
+              </p>
+            </div>
           </div>
           <div>
-            <p className="font-medium text-3xl text-gray-600 mb-2"> 2 </p>
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">
-              Unreliable Password-Saving Flows
-            </h3>
-            <p className="text-gray-700">
-            Bitwarden’s save prompt often failed to appear, leading users to 
-            manually create login items before filling out registration forms. 
-            This workaround increased effort, reduced trust, and caused 
-            frustration during one of the most essential tasks in the product.
-            </p>
-          </div>
-          <div>
-            <p className="font-medium text-3xl text-gray-600 mb-2"> 3 </p>
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">
-            User Signals & Competitive Gaps
-            </h3>
-            <p className="text-gray-700">
-            Users consistently reported frustration with Bitwarden’s missing 
-            in-page menu and frequently cited competitors like LastPass and 
-            1Password as having a superior autofill workflow. Many said the 
-            lack of this feature was enough to prevent adoption—or push them 
-            to switch tools entirely.
-            </p>
+              <img src="/1-legacy-autofill.png" alt="Legacy UI showing utofill options in the extension before the MVP" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
+                Legacy UI showing utofill options in the extension before the MVP
+              </p>
           </div>
           </CaseStudySection>
           <section className="w-full pt-16 pb-16 px-6 md:px-12 bg-[#FFF0E8]">
@@ -222,7 +228,7 @@ export function BitwardenAutofillExperiencePage() {
                     </ul>
                   </div>
                   <div>
-                    <img src="/extension-autofill/14-user-test.png" alt="Screenshot of a user testing session" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
+                    <img src="/14-user-test.png" alt="Screenshot of a user testing session" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
                     <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                       Screenshot of a user testing session right before they
                       discover the autofill menu
@@ -348,7 +354,7 @@ export function BitwardenAutofillExperiencePage() {
             </p>
           </div>
             <video width="full" height="240" controls className="rounded-md">
-              <source src="/extension-autofill/autofill-notification-demo.mp4" type="video/mp4"></source>
+              <source src="/autofill-notification-demo.mp4" type="video/mp4"></source>
             </video>
             <div className="col-span-2 text-gray-700 grid grid-cols-1 md:grid-cols-3 gap-8"> 
               <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
