@@ -19,9 +19,9 @@ export function CaseStudySummary({
   impact,
   image
 }: CaseStudySummaryProps) {
-  return <div className="w-full bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-12">
-        <div className="flex flex-col md:flex-row gap-8 items-start">
+  return <div className="w-full bg-white" data-case-study-summary>
+      <div className="max-w-6xl mx-auto px-6 md:px-12 py-12">
+        <div className="flex flex-col md:flex-row gap-10 items-start">
           {/* Image column - appears first on mobile, second on desktop */}
           <div className="w-full md:w-2/5 md:order-2 flex flex-col gap-6">
             <div className="rounded-xl overflow-hidden shadow-lg bg-[#FFFAF5]">
