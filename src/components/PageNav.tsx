@@ -128,7 +128,7 @@ export function PageNav({ sections }: PageNavProps) {
         </div>
         
         {/* Desktop view - horizontal */}
-        <div className="hidden md:flex justify-evenly py-4">
+        <div className="hidden md:flex justify-evenly pt-5 pb-4">
           {sections.map((section) => (
             <button
               key={section.id}
