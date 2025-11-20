@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { motion } from 'framer-motion';
 import { HeartIcon, UsersIcon, EyeIcon, TrendingUpIcon } from 'lucide-react';
 export function DesignPhilosophy() {

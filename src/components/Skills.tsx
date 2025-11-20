@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { motion } from 'framer-motion';
 import { PenToolIcon, LightbulbIcon, WrenchIcon, UsersIcon } from 'lucide-react';
 export function Skills() {

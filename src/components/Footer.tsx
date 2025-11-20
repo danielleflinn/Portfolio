@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { MailIcon, LinkedinIcon, GithubIcon } from 'lucide-react';
 export function Footer() {

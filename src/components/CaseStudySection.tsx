@@ -1,9 +1,9 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 interface CaseStudySectionProps {
   header: string;
   subheader?: string;
-  children: React.ReactNode;
+  children: ReactNode;
   columns?: 1 | 2 | 3 | 4;
   backgroundColor?: string;
   id?: string;
