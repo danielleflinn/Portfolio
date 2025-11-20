@@ -98,7 +98,7 @@ export function PageNav({ sections }: PageNavProps) {
             onClick={() => setIsMobileExpanded(!isMobileExpanded)}
             className="w-full flex items-center justify-between py-4 text-sm font-medium text-gray-800"
           >
-            <span className={activeSection ? 'text-[#F45F2A]' : 'text-gray-600'}>
+            <span className={activeSection ? 'text-[#F4632F]' : 'text-gray-600'}>
               {getActiveSectionLabel()}
             </span>
             <ChevronDown 
@@ -116,7 +116,7 @@ export function PageNav({ sections }: PageNavProps) {
                   onClick={() => scrollToSection(section.id)}
                   className={`text-left py-2 text-sm font-medium transition-colors border-l-4 pl-4 ${
                     activeSection === section.id
-                      ? 'text-[#F45F2A] border-[#F45F2A]'
+                      ? 'text-[#C3471D] border-[#C3471D]'
                       : 'text-gray-600 border-transparent hover:text-gray-800 hover:border-gray-300'
                   }`}
                 >
@@ -135,7 +135,7 @@ export function PageNav({ sections }: PageNavProps) {
               onClick={() => scrollToSection(section.id)}
               className={`flex-1 whitespace-nowrap text-sm font-medium transition-colors pb-2 border-b-2 ${
                 activeSection === section.id
-                  ? 'text-[#F45F2A] border-[#F45F2A]'
+                  ? 'text-[#C3471D] border-[#C3471D]'
                   : 'text-gray-600 border-transparent hover:text-gray-800 hover:border-gray-300'
               }`}
             >

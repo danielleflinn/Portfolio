@@ -58,7 +58,7 @@ export function DesignPhilosophy() {
             once: true
           }}>
                 <div className="flex items-center mb-4">
-                  <IconComponent size={24} className="text-[#F45F2A] mr-2" />
+                  <IconComponent size={24} className="text-[#F4632F] mr-2" />
                   <h3 className="text-xl font-semibold text-gray-800">
                     {value.title}
                   </h3>

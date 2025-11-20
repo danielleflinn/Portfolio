@@ -27,7 +27,7 @@ export function CaseStudies() {
       <div className="flex flex-col items-center max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex justify-center items-center mb-4">
-            <BookOpenIcon size={32} className="text-[#F45F2A]" />
+            <BookOpenIcon size={32} className="text-[#F4632F]" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             My Work

@@ -15,7 +15,7 @@ export function Hero() {
         duration: 0.6
       }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
-            Cooking Up <span className="text-[#F45F2A]">Delightful</span> User
+            Cooking Up <span className="text-[#F4632F]">Delightful</span> User
             Experiences
           </h1>
           <p className="text-lg text-gray-600 mb-8">
@@ -24,7 +24,7 @@ export function Hero() {
             bring system thinking, process maturity, and excellence to growing
             design teams (and the kitchen).
           </p>
-          <Link to="/about" className="bg-[#F45F2A] hover:bg-[#D94F23] text-black font-semibold tracking-wide px-6 py-3 rounded-lg transition-colors flex items-center justify-center inline-flex">
+          <Link to="/about" className="bg-[#F4632F] hover:bg-[#D94F23] text-black font-semibold tracking-wide px-6 py-3 rounded-lg transition-colors flex items-center justify-center inline-flex">
             More about me
             <ArrowRight size={18} className="ml-2" />
           </Link>
@@ -47,7 +47,7 @@ export function Hero() {
             <path d="M188.54 164.49C227.001 111.58 280.097 115.103 300.641 124.302C236.501 87.2711 188.729 125.976 171.281 151.929C170.417 153.215 170.742 154.935 171.975 155.872L184.216 165.172C185.576 166.205 187.536 165.871 188.54 164.49Z" fill="#FFFAF5" />
             <path d="M312.726 104.35C313.342 103.407 314.587 103.11 315.562 103.673C316.537 104.236 316.902 105.463 316.393 106.467L309.002 121.056L303.787 118.045L312.726 104.35Z" fill="#FDC8AB" />
             <path d="M181 265C181 260.582 184.582 257 189 257H229C233.418 257 237 260.582 237 265V358H181V265Z" fill="#FFFAF5" />
-            <path fillRule="evenodd" clipRule="evenodd" d="M229 252C235.627 252 241 257.373 241 264V359C241 365.627 235.627 371 229 371H189C182.373 371 177 365.627 177 359V264C177 257.373 182.373 252 189 252H229ZM189 257C184.582 257 181 260.582 181 265V358H237V265C237 260.582 233.418 257 229 257H227V259C227 260.657 225.657 262 224 262H194C192.343 262 191 260.657 191 259V257H189Z" fill="#F45F2A" />
+            <path fillRule="evenodd" clipRule="evenodd" d="M229 252C235.627 252 241 257.373 241 264V359C241 365.627 235.627 371 229 371H189C182.373 371 177 365.627 177 359V264C177 257.373 182.373 252 189 252H229ZM189 257C184.582 257 181 260.582 181 265V358H237V265C237 260.582 233.418 257 229 257H227V259C227 260.657 225.657 262 224 262H194C192.343 262 191 260.657 191 259V257H189Z" fill="#F4632F" />
             <circle cx="209" cy="364" r="3" fill="#FFFAF5" />
             <path d="M187 318H232" stroke="#4B5563" strokeWidth="0.25" />
             <path d="M187 312H232" stroke="#4B5563" strokeWidth="0.25" />

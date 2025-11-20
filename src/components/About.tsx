@@ -16,7 +16,7 @@ export function About() {
           once: true
         }} className="lg:mr-12">
             <div className="flex items-center mb-2">
-              <ChefHatIcon size={28} className="text-[#F45F2A] mr-3" />
+              <ChefHatIcon size={28} className="text-[#F4632F] mr-3" />
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                 The Cook
               </h2>
@@ -47,19 +47,19 @@ export function About() {
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                <PenToolIcon size={16} className="text-[#F45F2A] mr-2" />
+                <PenToolIcon size={16} className="text-[#F4632F] mr-2" />
                 <span className="text-gray-700">UX Design</span>
               </div>
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                <SparklesIcon size={16} className="text-[#F45F2A] mr-2" />
+                <SparklesIcon size={16} className="text-[#F4632F] mr-2" />
                 <span className="text-gray-700">Design Systems</span>
               </div>
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                <SettingsIcon size={16} className="text-[#F45F2A] mr-2" />
+                <SettingsIcon size={16} className="text-[#F4632F] mr-2" />
                 <span className="text-gray-700">DesignOps</span>
               </div>
               <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                <CheckCircleIcon size={16} className="text-[#F45F2A] mr-2" />
+                <CheckCircleIcon size={16} className="text-[#F4632F] mr-2" />
                 <span className="text-gray-700">Accessibility</span>
               </div>
             </div>
