@@ -48,8 +48,8 @@ export function BitwardenAutofillExperiencePage() {
             </p>
           </div>
           </CaseStudySection>
-          <CaseStudySection header="Problem" subheader="Autofill and save methods were unreliable and created friction, causing users to turn to competitors instead of Bitwarden." columns={2} id="problem">
-          <div className="grid grid-cols gap-6">
+          <CaseStudySection header="Problem" subheader="Autofill and save methods were unreliable and created friction, causing users to turn to competitors instead of Bitwarden" columns={2} id="problem">
+          <div className="grid gap-6">
             <div className="max-w-2xl">
               <p className="font-medium text-3xl text-gray-600 mb-2"> 1 </p>
               <h3 className="font-semibold text-lg text-gray-800 mb-2">
@@ -246,7 +246,7 @@ export function BitwardenAutofillExperiencePage() {
               </div>
             </CaseStudySection>
             
-            <CaseStudySection header="Design Solution" subheader="A scalable in-page autofill menu and redesigned save experience created a modern, intuitive, and trustworthy workflow across login, registration, and data entry tasks." columns={1} id="solution">
+            <CaseStudySection header="Design Solution" subheader="A scalable in-page autofill menu and redesigned save experience created a modern, intuitive, and trustworthy workflow across login, registration, and data entry tasks" columns={1} id="solution">
               <div className="text-gray-700">
                 <h3 className="font-semibold text-lg text-gray-800 mb-2">
                 MVP: Inline Autofill for Logins
@@ -338,7 +338,7 @@ export function BitwardenAutofillExperiencePage() {
                 </p>
           </div>
            </CaseStudySection>
-          <CaseStudySection header="Impact" subheader="The redesigned workflows significantly improved discoverability, usability, and satisfaction—directly supporting retention and contributing to enterprise sales wins." columns={2} backgroundColor="#FFF0E8" id="impact">
+          <CaseStudySection header="Impact" subheader="The redesigned workflows significantly improved discoverability, usability, and satisfaction—directly supporting retention and contributing to enterprise sales wins" columns={2} backgroundColor="#FFF0E8" id="impact">
             <div>
               <p className="text-gray-700 mb-3">
                 The updated journey now allowed users to:
@@ -348,15 +348,15 @@ export function BitwardenAutofillExperiencePage() {
                 <li> Generate and autofill strong passwords inline</li>
                 <li> Save via pre- or post-submit prompts</li>
                 <li> Receive confirmations that built user trust and confidence </li>
-            </ul>
-            <p className="text-gray-700 mb-3">
-            Users responded overwhelmingly positively to the launch, highlighting the ease and clarity of the new inline menu.
-            </p>
-          </div>
+              </ul>
+              <p className="text-gray-700 mb-3">
+              Users responded overwhelmingly positively to the launch, highlighting the ease and clarity of the new inline menu.
+              </p>
+            </div>
             <video width="full" height="240" controls className="rounded-md">
               <source src="/autofill-notification-demo.mp4" type="video/mp4"></source>
             </video>
-            <div className="col-span-2 text-gray-700 grid grid-cols-1 md:grid-cols-3 gap-8"> 
+            <div className="text-gray-700 grid grid-cols-1 md:col-span-2 md:grid-cols-3 gap-8"> 
               <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
                 “It’s incredibly efficient and makes logging in a breeze. 
                 <span className="font-semibold"> I love how intuitive and seamless it is, </span> fitting perfectly into 
@@ -385,7 +385,7 @@ export function BitwardenAutofillExperiencePage() {
               </p>
             </div>
           </CaseStudySection>
-          <CaseStudySection header="Conclusion" subheader="By modernizing autofill and save workflows, the project strengthened Bitwarden’s user experience, competitive position, and business outcomes." columns={1} id="conclusion">
+          <CaseStudySection header="Conclusion" subheader="By modernizing autofill and save workflows, the project strengthened Bitwarden’s user experience, competitive position, and business outcomes" columns={1} id="conclusion">
             <p className="text-gray-800 leading-relaxed mb-4 max-w-2xl">
               This initiative addressed long-standing usability challenges across 
               key workflows—autofilling credentials, saving new passwords, generating 
