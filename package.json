@@ -1,5 +1,5 @@
 {
-  "name": "Danieel Flinn Portfolio",
+  "name": "Danielle Flinn Portfolio",
   "version": "0.1.1",
   "private": true,
   "homepage": "https://danielleflinn.github.io/Portfolio",
@@ -9,8 +9,8 @@
     "build": "npx vite build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "preview": "npx vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "framer-motion": "^11.5.4",
