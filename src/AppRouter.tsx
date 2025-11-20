@@ -7,7 +7,10 @@ import { BitwardenExtensionRedesignPage } from './pages/BitwardenExtensionRedesi
 import { BitwardenDesignSystemPage } from './pages/BitwardenDesignSystemPage';
 import { ScrollToTop } from './components/ScrollToTop';
 export function AppRouter() {
-  return <BrowserRouter>
+  // Use basename in production for GitHub Pages, empty in development
+  const basename = import.meta.env.PROD ? '/Portfolio' : '';
+  
+  return <BrowserRouter basename={basename}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
