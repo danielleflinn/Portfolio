@@ -12,11 +12,11 @@ export function DesignPhilosophy() {
     icon: UsersIcon
   }, {
     title: 'Accessible',
-    description: 'Inclusive design ensures everyone can use and benefit from our products, regardless of their abilities or circumstances.',
+    description: 'Inclusive design ensures everyone can use and benefit from products, regardless of their abilities or circumstances.',
     icon: EyeIcon
   }, {
     title: 'Scalable',
-    description: 'Building flexible systems and patterns that grow with your product while maintaining consistency and efficiency.',
+    description: 'Building flexible systems and patterns that grow with the product while maintaining consistency and efficiency.',
     icon: TrendingUpIcon
   }];
   return <section className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">

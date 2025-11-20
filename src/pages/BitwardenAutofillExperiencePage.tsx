@@ -94,82 +94,77 @@ export function BitwardenAutofillExperiencePage() {
               </p>
           </div>
           </CaseStudySection>
-          <section className="w-full pt-16 pb-16 px-6 md:px-12 bg-[#FFF0E8]">
-            <div className="max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
-                    "This is a must-have feature…it will help autofill easily and
-                    accurately."
-                    <br />
-                    <span className="text-sm text-gray-600 italic">
-                      - Bitwarden community user
-                    </span>
-                  </p>
-                </div>
-                <div>
-                  <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
-                    "I have a very long distance for the eyes and mouse between
-                    the login field and the Bitwarden Toolbar button. Having the
-                    controls inside the fields would increase the usability a
-                    lot!"
-                    <br />
-                    <span className="text-sm text-gray-600 italic">
-                      - Bitwarden community user
-                    </span>
-            </p>
-          </div>
-                <div>
-                  <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
-                    "This request has been proposed for almost 1 year now and
-                    still waiting… I gave up and switched to a different Password
-                    Manager...Hope Bitwarden gets around to it at some point."
-                    <br />
-                    <span className="text-sm text-gray-600 italic">
-                      - Bitwarden community user
-                    </span>
-            </p>
-          </div>
-                <div>
-                  <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
-                    "As a recent convert from LastPass and Roboform to Bitwarden,
-                    this is by far the number 1 thing I miss - maybe the only
-                    thing I miss"
-                    <br />
-                    <span className="text-sm text-gray-600 italic">
-                      - Bitwarden community user
-                    </span>
-                 </p>
-          </div>
-                <div>
-                  <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
-                    "For less tech-savvy family members, this feature would be
-                    extremely helpful. I'm not even sure if I can get them to
-                    switch without this feature, as they have come to expect it
-                    from LastPass."
-                    <br />
-                    <span className="text-sm text-gray-600 italic">
-                      - Bitwarden community user
-                    </span>
-                  </p>
-          </div>
-        </div>
-          </div>
-          </section>
-          <section className="flex flex-col gap-8 items-center justify-center mb-16 w-full pt-16 pb-16 px-6 md:px-12  md:flex-row">
+          <CaseStudySection header="User quotes" columns={2} backgroundColor="#FFF0E8">
             <div>
-              <img src="/6-competitor-autofill.png" alt="Screenshot of 4 competing autofill menus" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
-              <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
-                Screenshot showing autofill menus from 4 competing products
+              <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
+                "I have a very long distance for the eyes and mouse between
+                the login field and the Bitwarden Toolbar button. Having the
+                controls inside the fields would increase the usability a
+                lot!"
+                <br />
+                <span className="text-sm text-gray-600 italic">
+                  - Bitwarden community user
+                </span>
               </p>
-          </div>
+            </div>
             <div>
-              <img src="/7-competitor-save.png" alt="Screenshot of 4 competitors save prompts" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
-              <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
-                Screenshot of save prompts from 4 competing products
-            </p>
-          </div>
-          </section>     
+              <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
+                "This request has been proposed for almost 1 year now and
+                still waiting… I gave up and switched to a different Password
+                Manager...Hope Bitwarden gets around to it at some point."
+                <br />
+                <span className="text-sm text-gray-600 italic">
+                  - Bitwarden community user
+                </span>
+              </p>
+            </div>
+            <div>
+              <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
+                "As a recent convert from LastPass and Roboform to Bitwarden,
+                this is by far the number 1 thing I miss - maybe the only
+                thing I miss"
+                <br />
+                <span className="text-sm text-gray-600 italic">
+                  - Bitwarden community user
+                </span>
+              </p>
+            </div>
+            <div>
+              <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
+                "For less tech-savvy family members, this feature would be
+                extremely helpful. I'm not even sure if I can get them to
+                switch without this feature."
+                <br />
+                <span className="text-sm text-gray-600 italic">
+                  - Bitwarden community user
+                </span>
+              </p>
+            </div>
+            <div>
+              <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
+                "This is a must-have feature…it will help autofill easily and
+                accurately."
+                <br />
+                <span className="text-sm text-gray-600 italic">
+                  - Bitwarden community user
+                </span>
+              </p>
+            </div>
+          </CaseStudySection>
+          <CaseStudySection header="Competitive analysis" columns={2}>
+            <div>
+                <img src="/6-competitor-autofill.png" alt="Screenshot of 4 competing autofill menus" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
+                  Screenshot showing autofill menus from 4 competing products
+                </p>
+            </div>
+              <div>
+                <img src="/7-competitor-save.png" alt="Screenshot of 4 competitors save prompts" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
+                  Screenshot of save prompts from 4 competing products
+              </p>
+            </div>
+          </CaseStudySection>    
           <CaseStudySection header="Process" subheader="Driving a solution through research, journey maps, UI iteration, and testing" columns={1} backgroundColor="#FFFAF5" id="process">
               <div>
                 <div className="flex flex-col md:flex-row gap-8 mb-8">
