@@ -4,25 +4,25 @@ import { BookOpenIcon } from 'lucide-react';
 export function CaseStudies() {
   const caseStudies = [{
     title: 'Elevating the Bitwarden Autofill Experience',
-    description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill through delivering the #1 community requested feature.',
+    description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden autofill and save through delivering the #1 community requested feature.',
     image: "/inline-menu-cover.png",
     duration: '6 months',
     team: '1 person',
-    tools: ['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']
+    tools: ['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management', 'Figma']
   }, {
     title: 'Modernizing the Bitwarden Extension',
     description: 'Improving user satisfaction and adoption by modernizing the Bitwarden extension interface and making password management more approachable.',
     image: "/extension-cover.png",
     duration: '10 months',
     team: '2 people',
-    tools: ['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management']
+    tools: ['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management', 'Figma']
   }, {
     title: 'Unifying the Bitwarden Design Language',
     description: 'Improving user satisfaction and internal design and development experience through establishing an atomic Design System and Component Library.',
     image: "/design-system-cover.png",
-    duration: '3 years',
+    duration: 'multi-year',
     team: '3 people',
-    tools: ['Design System', 'Component library', 'Storybook', 'Planning workshop', 'Visual design', 'Interaction design', 'Team processes design']
+    tools: ['Design System', 'Component library', 'Storybook', 'Planning workshop', 'Visual design', 'Interaction design', 'Team processes design', 'Figma']
   }];
   return <section id="recipes" className="w-full py-16 px-6 md:px-12 bg-white">
       <div className="flex flex-col items-center max-w-7xl mx-auto">

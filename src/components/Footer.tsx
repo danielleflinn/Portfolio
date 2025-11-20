@@ -6,7 +6,7 @@ export function Footer() {
   return <footer className="w-full py-8 px-6 md:px-12 bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-4 text-center md:text-left md:text-left md:mb-0">
             <span className="text-[#F45F2A] font-bold text-xl">
               Danielle Flinn
             </span>

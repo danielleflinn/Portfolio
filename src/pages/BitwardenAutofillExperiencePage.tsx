@@ -19,7 +19,10 @@ export function BitwardenAutofillExperiencePage() {
   return <div className="w-full min-h-screen">
       <Navbar />
       <main className="w-full bg-white">
-        <CaseStudySummary title="Elevating the Bitwarden Autofill Experience" description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill through delivering the #1 community requested feature." background="The Bitwarden password manager extension had several ways for users to save and fill their logins, but they were not discoverable or intuitive to users. This poor experience led many users to abandon the product in favor of competitors." timeline="6 months" role="Lead Product Designer" methods={['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management']} impact="Delivered the most requested feature, significantly improving user satisfaction and adoption rates" image="/inline-menu-cover.png" />
+        <CaseStudySummary title="Elevating the Bitwarden Autofill Experience" 
+        description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill through delivering the #1 community requested feature." 
+        background="The Bitwarden password manager extension had several ways for users to save and fill their logins, but they were not discoverable or intuitive to users. This poor experience led many users to abandon the product in favor of competitors." 
+        timeline="6 months" role="Lead Product Designer" methods={['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management', 'Figma']} impact="Delivered the most requested feature, significantly improving user satisfaction and adoption rates" image="/inline-menu-cover.png" />
         <PageNav sections={sections} />
           <CaseStudySection header="Business Goal" subheader="Improve user satisfaction and adoption by increasing usability of Bitwarden save and fill" columns={3} id="business-goal">
           <div className="bg-[#FFF5F0] p-6 rounded-lg">

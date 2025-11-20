@@ -18,7 +18,10 @@ export function BitwardenExtensionRedesignPage() {
   return <div className="w-full min-h-screen">
       <Navbar />
       <main className="w-full bg-white">
-        <CaseStudySummary title="Modernizing the Bitwarden Extension" description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill by delivering the #1 community requested feature." background="The Bitwarden password manager extension had complex interactions and outdated UI creating a reputation that Bitwarden was 'too technical'. This negatively impacted product adoption, retention and overall user satisfaction––ultimately making it difficult to sell Bitwarden." timeline="10 months" role="Senior Product Designer" methods={['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management']} impact="Modernized the extension interface, resulting in improved user experience and increased adoption" image="/extension-cover.png" />
+        <CaseStudySummary title="Modernizing the Bitwarden Extension" 
+        description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden autofill and save by delivering the #1 community requested feature." 
+        background="The Bitwarden password manager extension had complex interactions and outdated UI creating a reputation that Bitwarden was 'too technical'. This negatively impacted product adoption, retention and overall user satisfaction––ultimately making it difficult to sell Bitwarden." 
+        timeline="10 months" role="Senior Product Designer" methods={['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management', 'Figma']} impact="Modernized the extension interface, resulting in improved user experience and increased adoption" image="/extension-cover.png" />
         <PageNav sections={sections} />
         
         <CaseStudySection header="Business Goal" subheader="Improve product adoption, retention, and overall user satisfaction by redesigning the browser extension" columns={3} id="business-goal">
