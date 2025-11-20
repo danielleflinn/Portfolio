@@ -76,7 +76,7 @@ export function About() {
           once: true
         }}>
             <div className="w-80 md:mt-16">
-              <img src="/Portfolio/headshot.jpeg" alt="Professional headshot of Danielle Flinn smilling at the camera" className="w-80 rounded-full object-cover shadow-lg border-4 border-white" />
+              <img src="/Portfolio/headshot.jpeg" alt="Professional head shot of Danielle Flinn smiling at the camera" className="w-80 rounded-full object-cover shadow-lg border-4 border-white" />
             </div>
           </motion.div>
         </div>

@@ -33,7 +33,7 @@ export function CaseStudies() {
             My Work
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real challenges, scaleable solutions, and measurable outcomes
+            Real challenges, scalable solutions, and measurable outcomes
             demonstrating my impact from serving start ups and established
             companies.
           </p>

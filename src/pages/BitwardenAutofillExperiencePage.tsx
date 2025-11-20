@@ -89,9 +89,9 @@ export function BitwardenAutofillExperiencePage() {
             </div>
           </div>
           <div>
-              <img src="/Portfolio/1-legacy-autofill.png" alt="Legacy UI showing utofill options in the extension before the MVP" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <img src="/Portfolio/1-legacy-autofill.png" alt="Legacy UI showing autofill options in the extension before the MVP" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
               <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
-                Legacy UI showing utofill options in the extension before the MVP
+                Legacy UI showing autofill options in the extension before the MVP
               </p>
           </div>
           </CaseStudySection>
@@ -271,7 +271,7 @@ export function BitwardenAutofillExperiencePage() {
                   <img src="/Portfolio/11-final-password-fill2.png" alt="Final MVP released to users" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                   <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                     The MVP autofill menu design showing the "view details" quick
-                    link and a prompt to create a new item if there were no mathcing logins
+                    link and a prompt to create a new item if there were no matching logins
                   </p>
                 </div>
               </div>

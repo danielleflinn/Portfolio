@@ -5,7 +5,7 @@ export function Skills() {
   const skillCategories = [{
     title: 'Skills',
     icon: PenToolIcon,
-    items: ['UI/UX Design', 'Interaction design', 'Information architecture', 'Design Systems', 'Accessibility/WCAG', 'User research', 'DesignOps']
+    items: ['UI/UX Design', 'Interaction design', 'Information architecture', 'Design systems', 'Accessibility/WCAG', 'User research', 'DesignOps']
   }, {
     title: 'Methods',
     icon: LightbulbIcon,
@@ -17,7 +17,7 @@ export function Skills() {
   }, {
     title: 'Soft Strengths',
     icon: UsersIcon,
-    items: ['Collaboration', 'Communication', 'Organization', 'Documentation', 'Project Management', 'Leadership']
+    items: ['Collaboration', 'Communication', 'Organization', 'Documentation', 'Project management', 'Leadership']
   }];
   return <section className="w-full py-16 px-6 md:px-12 bg-[#FEE8DC]">
       <div className="max-w-7xl mx-auto">
