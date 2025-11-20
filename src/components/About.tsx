@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ChefHatIcon, PenToolIcon, SparklesIcon, CheckCircleIcon, SettingsIcon } from 'lucide-react';
 export function About() {
@@ -77,7 +76,7 @@ export function About() {
           once: true
         }}>
             <div className="w-80 md:mt-16">
-              <img src="/headshot.jpeg" alt="Professional headshot of Danielle Flinn smilling at the camera" className="w-80 rounded-full object-cover shadow-lg border-4 border-white" />
+              <img src="/Portfolio/headshot.jpeg" alt="Professional headshot of Danielle Flinn smilling at the camera" className="w-80 rounded-full object-cover shadow-lg border-4 border-white" />
             </div>
           </motion.div>
         </div>

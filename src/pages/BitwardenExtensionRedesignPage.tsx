@@ -20,7 +20,7 @@ export function BitwardenExtensionRedesignPage() {
         <CaseStudySummary title="Modernizing the Bitwarden Extension" 
         description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden autofill and save by delivering the #1 community requested feature." 
         background="The Bitwarden password manager extension had complex interactions and outdated UI creating a reputation that Bitwarden was 'too technical'. This negatively impacted product adoption, retention and overall user satisfaction––ultimately making it difficult to sell Bitwarden." 
-        timeline="10 months" role="Senior Product Designer" methods={['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management', 'Figma']} impact="Modernized the extension interface, resulting in improved user experience and increased adoption" image="/extension-cover.png" />
+        timeline="10 months" role="Senior Product Designer" methods={['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management', 'Figma']} impact="Modernized the extension interface, resulting in improved user experience and increased adoption" image="/Portfolio/extension-cover.png" />
         <PageNav sections={sections} />
         
         <CaseStudySection header="Business Goal" subheader="Improve product adoption, retention, and overall user satisfaction by redesigning the browser extension" columns={3} id="business-goal">
@@ -70,7 +70,7 @@ export function BitwardenExtensionRedesignPage() {
           </div>
           <div>
             <div className="rounded-lg overflow-hidden mb-4">
-              <img src="/extension-legacy-UI.png" alt="Legacy extension interface showing outdated design" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <img src="/Portfolio/extension-legacy-UI.png" alt="Legacy extension interface showing outdated design" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
               <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                 Legacy extension interface showing outdated design and poor hierarchy
               </p>
@@ -99,7 +99,7 @@ export function BitwardenExtensionRedesignPage() {
               </p>
             </div>
             <div className="rounded-lg overflow-hidden mb-4 md:col-span-2">
-              <img src="/extension-analysis.png" alt="A FigJam board showing a heuristic analysis of the extension interface with sticky note annotations of improvements to the interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <img src="/Portfolio/extension-analysis.png" alt="A FigJam board showing a heuristic analysis of the extension interface with sticky note annotations of improvements to the interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
               <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                 A FigJam board showing the heuristic analysis of the extension interface 
               </p>
@@ -131,13 +131,13 @@ export function BitwardenExtensionRedesignPage() {
             To ensure an updated UI would solve the problems identified, I created early UI concepts to drive stakeholder alignment and to use in usability testing.
           </p>
           <div className="rounded-lg overflow-hidden mb-4 md:col-span-2">
-            <img src="/extension-ui-evolution.png" alt="3 views of the Bitwarden extension login screen. The first shows the legacy extension with outdated styles. The second a black and white wireframe with improved hierarchy. The 3rd shows a higher fidelity design." className="w-full h-auto rounded-lg overflow-hidden" />
+            <img src="/Portfolio/extension-ui-evolution.png" alt="3 views of the Bitwarden extension login screen. The first shows the legacy extension with outdated styles. The second a black and white wireframe with improved hierarchy. The 3rd shows a higher fidelity design." className="w-full h-auto rounded-lg overflow-hidden" />
             <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
               3 view of the early UI concepts used to drive stakeholder alignment
             </p>
           </div>
           <div className="rounded-lg overflow-hidden mb-4 md:col-span-2">
-            <img src="/extension-ui-evolution2.png" alt="6 views of the Bitwarden extension vault screen. The 4 show medium fidelity design with the final 2 showing higher fidelity concepts used in testing." className="w-full h-auto rounded-lg overflow-hidden" />
+            <img src="/Portfolio/extension-ui-evolution2.png" alt="6 views of the Bitwarden extension vault screen. The 4 show medium fidelity design with the final 2 showing higher fidelity concepts used in testing." className="w-full h-auto rounded-lg overflow-hidden" />
             <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
               Additional early UI concepts used to align on a concept for user testing
             </p>
@@ -157,13 +157,13 @@ export function BitwardenExtensionRedesignPage() {
             These updates elevated the extension and strengthened brand consistency across products.
           </p>
           <div className="rounded-lg overflow-hidden mb-4 md:col-span-2">
-            <img src="/extension-legacy-tokens.png" alt="Legacy UI components, blue and gray for the main interface components and little hierarchy applied to screens." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+            <img src="/Portfolio/extension-legacy-tokens.png" alt="Legacy UI components, blue and gray for the main interface components and little hierarchy applied to screens." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
             <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
               Legacy UI design tokens and components
             </p>
           </div>
           <div className="rounded-lg overflow-hidden mb-4 md:col-span-2">
-            <img src="/extension-new-tokens.png" alt="New Design UI tokens. Showing the main Bitwarden blue with varying shades for supporting colors and and accent teal. When applied to screens the interface hierarchy is increased." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+            <img src="/Portfolio/extension-new-tokens.png" alt="New Design UI tokens. Showing the main Bitwarden blue with varying shades for supporting colors and and accent teal. When applied to screens the interface hierarchy is increased." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
             <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
               New UI design tokens and components
             </p>
@@ -184,7 +184,7 @@ export function BitwardenExtensionRedesignPage() {
               Previously, users bounced between "Tab" and "Vault" pages. The redesign consolidated these into a single, scannable experience with embedded filters, reducing confusion and improving search clarity.
             </p>
             <div className="rounded-lg overflow-hidden mb-4">
-              <img src="/extension-compare-vault.png" alt="Legacy extension UI and new design side by side showing more modern UI elements, increased organization, and hierarchy in the new design." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <img src="/Portfolio/extension-compare-vault.png" alt="Legacy extension UI and new design side by side showing more modern UI elements, increased organization, and hierarchy in the new design." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
               <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                 Comparison of old and new design for the vault screen
               </p>
@@ -203,7 +203,7 @@ export function BitwardenExtensionRedesignPage() {
               <li>Consolidated redundant language and clarified microcopy</li>
             </ul>
             <div className="rounded-lg overflow-hidden mb-4">
-              <img src="/extension-compare-terms.png" alt="Legacy extension UI and new design side by side showing more modern UI elements, increased organization, and hierarchy in the new design." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <img src="/Portfolio/extension-compare-terms.png" alt="Legacy extension UI and new design side by side showing more modern UI elements, increased organization, and hierarchy in the new design." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
               <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                 Comparison of old and new design for the login item screen
               </p>
@@ -218,7 +218,7 @@ export function BitwardenExtensionRedesignPage() {
               These helped new users feel welcomed and reduced the perception that Bitwarden is "too technical."
             </p>
             <div className="rounded-lg overflow-hidden">
-              <img src="/extension-delight.png" alt="New extension design showing a welcome screen with a key, person, and card illustration. A login page showing a waving hand to welcome the user back. An empty view of the password manager with an illustration of a vault. And an illustration showing an envelope with an obscured phrase for the request password hint screen." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <img src="/Portfolio/extension-delight.png" alt="New extension design showing a welcome screen with a key, person, and card illustration. A login page showing a waving hand to welcome the user back. An empty view of the password manager with an illustration of a vault. And an illustration showing an envelope with an obscured phrase for the request password hint screen." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
               <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                 Friendly illustrations used in onboarding screens and empty states
               </p>
@@ -282,7 +282,7 @@ export function BitwardenExtensionRedesignPage() {
               </ul>
               </div>
               <div className="rounded-lg overflow-hidden mb-6">
-                <img src="/extension-compact.png" alt="Beta enhancements for compact mode and a filter toggle" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <img src="/Portfolio/extension-compact.png" alt="Beta enhancements for compact mode and a filter toggle" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   Beta enhancements for compact mode show reduced spacing by 4px and a filter toggle
                 </p>
@@ -327,7 +327,7 @@ export function BitwardenExtensionRedesignPage() {
             The success of the redesign validated the need for ongoing UX modernization across the ecosystem and demonstrated how thoughtful, user-centered design can meaningfully improve both product perception and business outcomes.
           </p>
           <div className="rounded-lg overflow-hidden">
-            <img src="/extension-conclusion.png" alt="Final redesigned extension interface showing modern, cohesive design" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+            <img src="/Portfolio/extension-conclusion.png" alt="Final redesigned extension interface showing modern, cohesive design" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
             <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
               Final redesigned extension interface showing modern, cohesive design
             </p>
