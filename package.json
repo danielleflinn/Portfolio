@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "preview": "npx vite preview",
     "predeploy": "npm run build",
-    "deploy": "cp dist/index.html dist/404.html && gh-pages -d dist"
+    "deploy": "cp dist/index.html dist/404.html && git branch -D gh-pages 2>/dev/null || true && gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.5.4",
