@@ -1,4 +1,3 @@
-import React from 'react';
 import { RecipeCard } from './RecipeCard';
 import { BookOpenIcon } from 'lucide-react';
 export function CaseStudies() {

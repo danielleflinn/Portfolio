@@ -1,10 +1,8 @@
-import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { CaseStudySummary } from '../components/CaseStudySummary';
 import { CaseStudySection } from '../components/CaseStudySection';
 import { PageNav } from '../components/PageNav';
-import { Heading3 } from 'lucide-react';
 
 const sections = [
   { id: 'business-goal', label: 'Business Goal' },
