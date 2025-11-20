@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { App } from './App';
 import { AboutPage } from './pages/AboutPage';
 import { BitwardenAutofillExperiencePage } from './pages/BitwardenAutofillExperiencePage';
@@ -6,8 +6,7 @@ import { BitwardenExtensionRedesignPage } from './pages/BitwardenExtensionRedesi
 import { BitwardenDesignSystemPage } from './pages/BitwardenDesignSystemPage';
 import { ScrollToTop } from './components/ScrollToTop';
 export function AppRouter() {
-  
-  return <BrowserRouter>
+  return <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
@@ -16,5 +15,5 @@ export function AppRouter() {
         <Route path="/bitwarden-extension-redesign" element={<BitwardenExtensionRedesignPage />} />
         <Route path="/bitwarden-design-system" element={<BitwardenDesignSystemPage />} />
       </Routes>
-    </BrowserRouter>;
+    </HashRouter>;
 }
