@@ -152,8 +152,7 @@ export function BitwardenDesignSystemPage() {
         </CaseStudySection>
         <CaseStudySection header="Process" subheader="Through close engineering collaboration, we developed a consistent and branded component library and design system" columns={1} id="process">
           <div>
-            <div className="flex flex-col md:flex-row gap-8 mb-8">
-              <div>
+              <div className="mb-6">
                 <h3 className="font-semibold text-lg text-gray-800 mb-2">
                   Building a Cross-Functional Working Group
                 </h3>
@@ -167,13 +166,12 @@ export function BitwardenDesignSystemPage() {
                   <li>Engineering guidelines for building the library in code</li>
                 </ul>
               </div>
-              <div>
-                <img src="/Portfolio/placeholder.png" alt="Cross-functional working group collaboration" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <div className="mb-8">
+                <img src="/Portfolio/ds-planning.png" alt="Cross-functional working group collaboration" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   FigJam board used in a working group planning session
                 </p>
               </div>
-            </div>
             <div className="flex flex-col md:flex-row gap-8 mb-8">
               <div>
                 <h3 className="font-semibold text-lg text-gray-800 mb-2">
@@ -234,46 +232,65 @@ export function BitwardenDesignSystemPage() {
                   Between 2022 and 2024, engineering teams migrated the web app page-by-page, using each feature update as an opportunity to replace legacy UI with design system components. The shared import workflow POC accelerated adoption and validated the system's impact.
                 </p>
               </div>
-              <div className="mb-6">
+              <div className="mb-8">
                 <img src="/Portfolio/ds-web-app.png" alt="Web app migration progress and component adoption" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   The web app before and after being migrated to the Bitwarden Design System
                 </p>
               </div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                  Extension Redesign
-                </h3>
-                <p className="text-gray-700 mb-4 max-w-2xl">
-                  Once we had made enough progress with the web app interface it was time to extend the design system’s benefits to the browser extension. 
-                </p>
-                <p className="text-gray-700 mb-4 max-w-2xl">
-                  At the same time, the business prioritized a full extension redesign. This empowered the design team to move forward with component UI updates to modernize the interfaces further.
-                </p>
-                <Link to="/bitwarden-extension-redesign" className="font-bold underline text-[#C3471D] hover:text-[#D94F23] transition-colors mb-6 inline-block">
-                  More about the extension redesign
-                </Link>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2">
+                    Extension Redesign
+                  </h3>
+                  <p className="text-gray-700 mb-4 max-w-2xl">
+                    Once we had made enough progress with the web app interface it was time to extend the design system’s benefits to the browser extension. 
+                  </p>
+                  <p className="text-gray-700 mb-4 max-w-2xl">
+                    At the same time, the business prioritized a full extension redesign. This empowered the design team to move forward with component UI updates to modernize the interfaces further.
+                  </p>
+                  <Link to="/bitwarden-extension-redesign" className="font-bold underline text-[#C3471D] hover:text-[#D94F23] transition-colors inline-block">
+                    More about the extension redesign
+                  </Link>
+                </div>
+                <div>
+                  <img src="/Portfolio/ds-new-tokens.png" alt="Updated design tokens and components for Bitwarden showing more friendly and inviting visuals" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
+                    The design system's updated design tokens and components
+                  </p>
+                </div>
               </div>
-              <div className="mb-6">
+              
+              <div className="mb-8">
                 <img src="/Portfolio/ds-extension.png" alt="Extension redesign with upgraded design tokens" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   The Bitwarden extension before and after the migration to the Design System
                 </p>
               </div>
+              
               <div>
                 <h3 className="font-semibold text-lg text-gray-800 mb-2">
                   Preparing for Desktop Migration
                 </h3>
-                <p className="text-gray-700 max-w-2xl">
+                <p className="text-gray-700 max-w-2xl mb-6">
                   I set a strategic vision for unifying the desktop and web app using the same component foundation. User interviews validated this approach, and leadership aligned behind the plan for a full desktop migration.
                 </p>
               </div>
-              <div className="mb-6">
-                <img src="/Portfolio/placeholder.png" alt="Desktop migration strategy and vision" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
-                <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
-                  Desktop migration strategy and vision
-                </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div className="mb-8">
+                  <img src="/Portfolio/ds-desktop.png" alt="Screenshot showing the design system components applied to the desktop application" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
+                    Applying the design system components to the desktop application to create a unified interface across platforms
+                  </p>
+                </div>
+                <div className="mb-8">
+                  <img src="/Portfolio/ds-new-webapp.png" alt="The new UI styles from the extension refresh applied to the web app. The image reflects a similar user interface to that of the view of the desktop interface." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
+                    The new UI styles applied to the web app. 
+                  </p>
               </div>
+              </div>
+              
         </CaseStudySection>
         <CaseStudySection header="Impact" subheader="The Bitwarden design system improved product consistency, accessibility, and engineering speed—earning strong praise and commitment from internal teams and boosting user trust" columns={2} id="impact">
           <div>
