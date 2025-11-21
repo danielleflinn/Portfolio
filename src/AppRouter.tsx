@@ -4,6 +4,7 @@ import { AboutPage } from './pages/AboutPage';
 import { BitwardenAutofillExperiencePage } from './pages/BitwardenAutofillExperiencePage';
 import { BitwardenExtensionRedesignPage } from './pages/BitwardenExtensionRedesignPage';
 import { BitwardenDesignSystemPage } from './pages/BitwardenDesignSystemPage';
+import { WHSCommunityPage } from './pages/WHSCommunityPage';
 import { ScrollToTop } from './components/ScrollToTop';
 export function AppRouter() {
   return <HashRouter>
@@ -14,6 +15,7 @@ export function AppRouter() {
         <Route path="/bitwarden-autofill-experience" element={<BitwardenAutofillExperiencePage />} />
         <Route path="/bitwarden-extension-redesign" element={<BitwardenExtensionRedesignPage />} />
         <Route path="/bitwarden-design-system" element={<BitwardenDesignSystemPage />} />
+        <Route path="/whs-community" element={<WHSCommunityPage />} />
       </Routes>
     </HashRouter>;
 }

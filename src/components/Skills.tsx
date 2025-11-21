@@ -19,7 +19,7 @@ export function Skills() {
     items: ['Collaboration', 'Communication', 'Organization', 'Documentation', 'Project management', 'Leadership']
   }];
   return <section className="w-full py-16 px-6 md:px-12 bg-[#FEE8DC]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, categoryIndex) => {
           const IconComponent = category.icon;

@@ -23,6 +23,7 @@ export function RecipeCard({
     if (title.includes('Autofill')) return '/bitwarden-autofill-experience';
     if (title.includes('Extension')) return '/bitwarden-extension-redesign';
     if (title.includes('Design Language')) return '/bitwarden-design-system';
+    if (title.includes('social wellbeing') || title.includes('social wellness')) return '/whs-community';
     return '#';
   };
   return <motion.div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col md:flex-row" initial={{

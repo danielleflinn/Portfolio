@@ -22,6 +22,13 @@ export function CaseStudies() {
     duration: 'multi-year',
     team: '3 people',
     tools: ['Design System', 'Component library', 'Storybook', 'Planning workshop', 'Visual design', 'Interaction design', 'Team processes design', 'Figma']
+  }, {
+    title: 'Creating a social wellbeing solution',
+    description: 'Improving user engagement and competitive positioning by launching a 0 to 1 social wellness product and expanding business offerings.',
+    image: "/Portfolio/community-cover.png",
+    duration: '6 months',
+    team: '1 person',
+    tools: ['UI/UX Design', 'Discovery research', 'User surveys', 'User interviews', 'Gamification map', 'Wireframing', 'Usability testing', 'Sketch']
   }];
   return <section id="recipes" className="w-full py-16 px-6 md:px-12 bg-white">
       <div className="flex flex-col items-center max-w-7xl mx-auto">

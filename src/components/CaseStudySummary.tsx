@@ -23,11 +23,11 @@ export function CaseStudySummary({
         <div className="flex flex-col md:flex-row gap-10 items-start">
           {/* Image column - appears first on mobile, second on desktop */}
           <div className="w-full md:w-2/5 md:order-2 flex flex-col gap-6">
-            <div className="rounded-xl overflow-hidden shadow-lg bg-[#FFFAF5]">
+            <div className="rounded-xl overflow-hidden">
               <img src={image} alt={title} className="w-full h-auto object-contain" />
             </div>
             {/* Background Section - appears here on desktop only */}
-            <div className="hidden md:block p-4 bg-[#FFFAF5] rounded-lg border border-[#FFE8D9]">
+            <div className="hidden md:block p-4 bg-[#FFF0E8] rounded-lg border border-[#FFD6C2]">
               <h3 className="font-semibold text-gray-800 mb-2">Background</h3>
               <p className="text-gray-600">{background}</p>
             </div>
