@@ -5,6 +5,7 @@ import { CaseStudySection } from '../components/CaseStudySection';
 import { PageNav } from '../components/PageNav';
 
 const sections = [
+  { id: 'overview', label: 'Overview' },
   { id: 'business-goal', label: 'Business Goal' },
   { id: 'problem', label: 'Problem' },
   { id: 'process', label: 'Process' },
@@ -16,12 +17,12 @@ const sections = [
 export function BitwardenExtensionRedesignPage() {
   return <div className="w-full min-h-screen">
       <Navbar />
-      <main className="w-full bg-white">
+      <PageNav sections={sections} />
+      <main className="w-full bg-white" style={{ paddingTop: '60px' }}>
         <CaseStudySummary title="Modernizing the Bitwarden Extension" 
         description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden autofill and save by delivering the #1 community requested feature." 
         background="The Bitwarden password manager extension had complex interactions and outdated UI creating a reputation that Bitwarden was 'too technical'. This negatively impacted product adoption, retention and overall user satisfaction––ultimately making it difficult to sell Bitwarden." 
         timeline="10 months" role="Senior Product Designer" methods={['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management', 'Figma']} impact="Modernized the extension interface, resulting in improved user experience and increased adoption" image="/Portfolio/extension-cover.png" />
-        <PageNav sections={sections} />
         
         <CaseStudySection header="Business Goal" subheader="Improve product adoption, retention, and overall user satisfaction by redesigning the browser extension" columns={3} id="business-goal">
             <div className="bg-[#FFF5F0] p-6 rounded-lg">
