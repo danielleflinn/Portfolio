@@ -26,7 +26,7 @@ export function BitwardenAutofillExperiencePage() {
           <CaseStudySection header="Business Goal" subheader="Improve user satisfaction and adoption by increasing usability of Bitwarden save and fill" columns={3} id="business-goal">
           <div className="bg-[#FFF5F0] p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-gray-800 mb-2">
-              Increase user adoption
+              Increase User Adoption
             </h3>
             <p className="text-gray-700">
               Accelerate when users experience autofill
@@ -34,7 +34,7 @@ export function BitwardenAutofillExperiencePage() {
           </div>
           <div className="bg-[#FFF5F0] p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-gray-800 mb-2">
-              Reduce user friction
+              Reduce User Friction
             </h3>
             <p className="text-gray-700">
               Improve discoverability and usability of save and autofill
@@ -42,7 +42,7 @@ export function BitwardenAutofillExperiencePage() {
           </div>
           <div className="bg-[#FFF5F0] p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-gray-800 mb-2">
-              Enhance competitive position
+              Enhance Competitive Position
             </h3>
             <p className="text-gray-700">
                 Improve approachability of autofill so it is on par or better
@@ -96,7 +96,7 @@ export function BitwardenAutofillExperiencePage() {
               </p>
           </div>
           </CaseStudySection>
-          <CaseStudySection header="User quotes" columns={2} backgroundColor="#FFF0E8">
+          <CaseStudySection header="User Quotes" columns={2} backgroundColor="#FFF0E8">
             <div>
               <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">
                 "I have a very long distance for the eyes and mouse between
@@ -153,7 +153,7 @@ export function BitwardenAutofillExperiencePage() {
               </p>
             </div>
           </CaseStudySection>
-          <CaseStudySection header="Competitive analysis" columns={2}>
+          <CaseStudySection header="Competitive Analysis" columns={2}>
             <div>
                 <img src="/Portfolio/6-competitor-autofill.png" alt="Screenshot of 4 competing autofill menus" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">

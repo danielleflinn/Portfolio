@@ -226,7 +226,7 @@ export function BitwardenDesignSystemPage() {
         <CaseStudySection header="Design Solution" subheader="An atomic Design System established a unified visual language, introduced modernized tokens and components, and enabled scalable interface development" columns={1} backgroundColor="#FEE8DC" id="solution">
               <div>
                 <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                Migrating the web app
+                Migrating the Web App
                 </h3>
                 <p className="text-gray-700 max-w-2xl mb-6">
                   Between 2022 and 2024, engineering teams migrated the web app page-by-page, using each feature update as an opportunity to replace legacy UI with design system components. The shared import workflow POC accelerated adoption and validated the system's impact.

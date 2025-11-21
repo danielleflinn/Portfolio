@@ -27,7 +27,7 @@ export function BitwardenExtensionRedesignPage() {
         <CaseStudySection header="Business Goal" subheader="Improve product adoption, retention, and overall user satisfaction by redesigning the browser extension" columns={3} id="business-goal">
             <div className="bg-[#FFF5F0] p-6 rounded-lg">
               <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                Reduce user friction
+                Reduce User Friction
               </h3>
               <p className="text-gray-700">
                 Redesign for clarity and emphasize key elements
@@ -35,7 +35,7 @@ export function BitwardenExtensionRedesignPage() {
             </div>
             <div className="bg-[#FFF5F0] p-6 rounded-lg">
               <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                Simplify user onboarding
+                Simplify User Onboarding
               </h3>
               <p className="text-gray-700">
                 Guide users to accelerate product familiarity
@@ -43,7 +43,7 @@ export function BitwardenExtensionRedesignPage() {
             </div>
             <div className="bg-[#FFF5F0] p-6 rounded-lg">
               <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                Enhance competitive position
+                Enhance Competitive Position
               </h3>
               <p className="text-gray-700">
                Create a positive, modern, and approachable perception of Bitwarden
@@ -127,7 +127,7 @@ export function BitwardenExtensionRedesignPage() {
             By grounding decisions in research and ensuring alignment across teams, the project delivered a cohesive, brand-aligned extension experience.
           </p>
         </CaseStudySection>
-        <CaseStudySection header="Earl UI concepts & iteration" columns={1}>
+        <CaseStudySection header="Early UI Concepts & Iteration" columns={1}>
           <p className="text-gray-700 max-w-2xl mb-4">
             To ensure an updated UI would solve the problems identified, I created early UI concepts to drive stakeholder alignment and to use in usability testing.
           </p>

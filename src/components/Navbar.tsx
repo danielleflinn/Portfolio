@@ -19,7 +19,7 @@ export function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="text-gray-700 hover:text-[#F4632F] transition-colors">
-            My work
+            My Work
           </Link>
           <Link to="/about" className="text-gray-700 hover:text-[#F4632F] transition-colors">
             About
