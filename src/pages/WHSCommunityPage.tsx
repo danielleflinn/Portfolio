@@ -2,6 +2,7 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { CaseStudySummary } from '../components/CaseStudySummary';
 import { CaseStudySection } from '../components/CaseStudySection';
+import { PageStepper } from '../components/PageStepper';
 
 export function WHSCommunityPage() {
   return <div className="w-full min-h-screen bg-white">
@@ -16,6 +17,12 @@ export function WHSCommunityPage() {
           </div>
         </CaseStudySection>
       </main>
+      <PageStepper
+        previous={{
+          title: 'Unifying the Bitwarden Design Language',
+          path: '/bitwarden-design-system'
+        }}
+      />
       <Footer />
     </div>;
 }

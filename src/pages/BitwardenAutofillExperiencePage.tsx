@@ -3,6 +3,7 @@ import { Footer } from '../components/Footer';
 import { CaseStudySummary } from '../components/CaseStudySummary';
 import { CaseStudySection } from '../components/CaseStudySection';
 import { PageNav } from '../components/PageNav';
+import { PageStepper } from '../components/PageStepper';
 
 const sections = [
   { id: 'overview', label: 'Overview' },
@@ -400,6 +401,12 @@ export function BitwardenAutofillExperiencePage() {
             </p>
           </CaseStudySection>
       </main>
+      <PageStepper
+        next={{
+          title: 'Modernizing the Bitwarden Extension',
+          path: '/bitwarden-extension-redesign'
+        }}
+      />
       <Footer />
     </div>;
 }

@@ -4,6 +4,7 @@ import { CaseStudySummary } from '../components/CaseStudySummary';
 import { CaseStudySection } from '../components/CaseStudySection';
 import { PageNav } from '../components/PageNav';
 import { Link } from 'react-router-dom';
+import { PageStepper } from '../components/PageStepper';
 
 const sections = [
   { id: 'overview', label: 'Overview' },
@@ -342,6 +343,16 @@ export function BitwardenDesignSystemPage() {
           </div>
         </CaseStudySection>
       </main>
+      <PageStepper
+        previous={{
+          title: 'Modernizing the Bitwarden Extension',
+          path: '/bitwarden-extension-redesign'
+        }}
+        next={{
+          title: 'Creating a social wellbeing solution',
+          path: '/whs-community'
+        }}
+      />
       <Footer />
     </div>;
 }
