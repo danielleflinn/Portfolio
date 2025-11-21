@@ -14,7 +14,7 @@ export function Education() {
     institution: 'Deque Systems, Inc'
   }];
   return <section className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
           My education
         </h2>

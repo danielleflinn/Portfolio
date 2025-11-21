@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ChefHatIcon, PenToolIcon, SparklesIcon, CheckCircleIcon, SettingsIcon } from 'lucide-react';
 export function About() {
   return <section id="about" className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start gap-12">
           <motion.div initial={{
           opacity: 0,
