@@ -6,7 +6,6 @@ interface PageNavProps {
 }
 
 export function PageNav({ sections }: PageNavProps) {
-  const [isFixed, setIsFixed] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [topOffset, setTopOffset] = useState(73);
   const [isMobileExpanded, setIsMobileExpanded] = useState(false);
@@ -21,19 +20,20 @@ export function PageNav({ sections }: PageNavProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const summaryElement = document.querySelector('[data-case-study-summary]');
-      if (summaryElement) {
-        const summaryBottom = summaryElement.getBoundingClientRect().bottom;
-        setIsFixed(summaryBottom < 0);
-      }
-
       // Find active section based on scroll position
-      // Account for navbar (sticky) + PageNav height when fixed
+      // Account for navbar (sticky) + PageNav height
       const navbar = document.querySelector('nav');
       const navbarHeight = navbar ? navbar.offsetHeight : 73;
-      const pageNavHeight = isFixed ? 60 : 0; // Approximate height of PageNav
+      const pageNavHeight = 60; // Height of PageNav
       const offset = navbarHeight + pageNavHeight + 20; // Extra padding
       const scrollPosition = window.scrollY + offset;
+      
+      // Check if we're at the top (Overview section)
+      const overviewElement = document.getElementById('overview');
+      if (overviewElement && window.scrollY < overviewElement.offsetHeight + 100) {
+        setActiveSection('overview');
+        return;
+      }
       
       // Check sections from bottom to top to find the first one we've scrolled past
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -46,18 +46,13 @@ export function PageNav({ sections }: PageNavProps) {
           }
         }
       }
-      
-      // If we're at the top, clear active section
-      if (window.scrollY < 100) {
-        setActiveSection('');
-      }
     };
 
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [sections, isFixed]);
+  }, [sections]);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -66,13 +61,21 @@ export function PageNav({ sections }: PageNavProps) {
       const navbarHeight = navbar ? navbar.offsetHeight : 73;
       const pageNavHeight = 60; // Height of PageNav when fixed
       const offset = navbarHeight + pageNavHeight + 20; // Extra padding
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+      
+      // For overview, scroll to top with just navbar offset
+      if (id === 'overview') {
+        window.scrollTo({
+          top: navbarHeight,
+          behavior: 'smooth'
+        });
+      } else {
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
       
       // Close mobile menu after selection
       setIsMobileExpanded(false);
@@ -80,16 +83,17 @@ export function PageNav({ sections }: PageNavProps) {
   };
 
   const getActiveSectionLabel = () => {
+    if (activeSection === 'overview' || !activeSection) {
+      return 'Overview';
+    }
     const active = sections.find(s => s.id === activeSection);
-    return active ? active.label : sections[0]?.label || '';
+    return active ? active.label : sections[0]?.label || 'Overview';
   };
 
   return (
     <nav
-      className={`flex flex-row justify-between items-center w-full bg-white border-b border-gray-200 transition-all duration-300 mb-12 ${
-        isFixed ? 'fixed z-40 shadow-sm' : 'relative'
-      }`}
-      style={isFixed ? { top: `${topOffset}px` } : undefined}
+      className="flex flex-row justify-between items-center w-full bg-white border-b border-gray-200 transition-all duration-300 mb-12 fixed z-40 shadow-sm"
+      style={{ top: `${topOffset}px` }}
     >
       <div className="max-w-5xl mx-auto px-6 md:px-12 w-full">
         {/* Mobile view - collapsed */}
@@ -98,7 +102,7 @@ export function PageNav({ sections }: PageNavProps) {
             onClick={() => setIsMobileExpanded(!isMobileExpanded)}
             className="w-full flex items-center justify-between py-4 text-sm font-medium text-gray-800"
           >
-            <span className={activeSection ? 'text-[#F4632F]' : 'text-gray-600'}>
+            <span className={activeSection === 'overview' || !activeSection ? 'text-[#C3471D]' : 'text-gray-600'}>
               {getActiveSectionLabel()}
             </span>
             <ChevronDown 
@@ -115,7 +119,7 @@ export function PageNav({ sections }: PageNavProps) {
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
                   className={`text-left py-2 text-sm font-medium transition-colors border-l-4 pl-4 ${
-                    activeSection === section.id
+                    activeSection === section.id || (section.id === 'overview' && !activeSection)
                       ? 'text-[#C3471D] border-[#C3471D]'
                       : 'text-gray-600 border-transparent hover:text-gray-800 hover:border-gray-300'
                   }`}
@@ -134,7 +138,7 @@ export function PageNav({ sections }: PageNavProps) {
               key={section.id}
               onClick={() => scrollToSection(section.id)}
               className={`flex-1 whitespace-nowrap text-sm font-medium transition-colors pb-2 border-b-2 ${
-                activeSection === section.id
+                activeSection === section.id || (section.id === 'overview' && !activeSection)
                   ? 'text-[#C3471D] border-[#C3471D]'
                   : 'text-gray-600 border-transparent hover:text-gray-800 hover:border-gray-300'
               }`}
