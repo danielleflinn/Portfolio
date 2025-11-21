@@ -50,6 +50,12 @@ export function BitwardenDesignSystemPage() {
               Interviews confirmed a strong appetite for standardization. Designers and engineers wanted a component library, and product leaders wanted a more polished, usable interface.
             </p>
           </div>
+          <div className="md:col-span-2 lg:col-span-3">
+            <img src="/Portfolio/ds-legacy-ui.png" alt="3 screenshots of the Bitwarden Password Manager interfaces showing flat, gray UI with different design patterns used on each interface." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+            <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
+            Screenshots  from 2021 showing the desktop, web app, and extension interfaces all using a different UI framework
+            </p>
+          </div>
         </CaseStudySection>
         <CaseStudySection header="Problem" subheader="Multiple UI frameworks created inconsistent experiences, accessibility gaps, and needless complexity for users, designers, and engineers" columns={3} id="problem">
           <div>
@@ -77,12 +83,6 @@ export function BitwardenDesignSystemPage() {
             </h3>
             <p className="text-gray-700 max-w-2xl">
               Every UI change had to be made in multiple frameworks, leading to redundant work and inconsistent implementations, slowing design and development efforts.
-            </p>
-          </div>
-          <div className="md:col-span-2 lg:col-span-3">
-            <img src="/Portfolio/ds-legacy-ui.png" alt="3 screenshots of the Bitwarden Password Manager interfaces showing flat, gray UI with different design patterns used on each interface." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
-            <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
-            Screenshots  from 2021 showing the desktop, web app, and extension interfaces all using a different UI framework
             </p>
           </div>
         </CaseStudySection>
