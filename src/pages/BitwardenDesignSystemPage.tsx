@@ -123,7 +123,7 @@ export function BitwardenDesignSystemPage() {
                 </ul>
               </div>
               <div>
-                <img src="/Portfolio/ds-diagram.png" alt="Stakeholder education presentation diagram" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-lg" />
+                <img src="/Portfolio/ds-diagram.png" alt="Stakeholder education presentation diagram" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4 ">
                   Stakeholder education presentation and diagrams
                 </p>
@@ -301,7 +301,7 @@ export function BitwardenDesignSystemPage() {
         <CaseStudySection header="Internal Feedback" columns={3} backgroundColor="#FFF0E8" id="internal-feedback">
           <div className="bg-[#FFD6C2] p-6 rounded-lg">
             <p className="text-gray-800 italic">
-              "<span className="font-semibold">This is one of the best Design Systems I've used. I finally don't have to fight the framework</span> when implementing designs."
+              "<span className="font-semibold">This is one of the best Design Systems I've used.</span> I finally don't have to fight the framework when implementing designs."
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               – Bitwarden Engineer
