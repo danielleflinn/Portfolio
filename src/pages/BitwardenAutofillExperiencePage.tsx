@@ -23,7 +23,7 @@ export function BitwardenAutofillExperiencePage() {
         <CaseStudySummary title="Elevating the Bitwarden Autofill Experience" 
         description="Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden save and fill through delivering the #1 community requested feature." 
         background="The Bitwarden password manager extension had several ways for users to save and fill their logins, but they were not discoverable or intuitive to users. This poor experience led many users to abandon the product in favor of competitors." 
-        timeline="6 months" role="Lead Product Designer" methods={['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management', 'Figma']} impact="Delivered the most requested feature, significantly improving user satisfaction and adoption rates" image="/Portfolio/inline-menu-cover.png" />
+        timeline="6 months" role="Lead Product Designer" methods={['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management', 'Figma']} impact="Delivered the most requested feature, significantly improving user satisfaction and adoption rates" image="/inline-menu-cover.png" />
           <CaseStudySection header="Business Goal" subheader="Improve user satisfaction and adoption by increasing usability of Bitwarden save and fill" columns={3} id="business-goal">
           <div className="bg-[#FFF5F0] p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-gray-800 mb-2">
@@ -91,7 +91,7 @@ export function BitwardenAutofillExperiencePage() {
             </div>
           </div>
           <div>
-              <img src="/Portfolio/1-legacy-autofill.png" alt="Legacy UI showing autofill options in the extension before the MVP" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+              <img src="/1-legacy-autofill.png" alt="Legacy UI showing autofill options in the extension before the MVP" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
               <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                 Legacy UI showing autofill options in the extension before the MVP
               </p>
@@ -156,13 +156,13 @@ export function BitwardenAutofillExperiencePage() {
           </CaseStudySection>
           <CaseStudySection header="Competitive Analysis" columns={2}>
             <div>
-                <img src="/Portfolio/6-competitor-autofill.png" alt="Screenshot of 4 competing autofill menus" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <img src="/6-competitor-autofill.png" alt="Screenshot of 4 competing autofill menus" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   Screenshot showing autofill menus from 4 competing products
                 </p>
             </div>
               <div>
-                <img src="/Portfolio/7-competitor-save.png" alt="Screenshot of 4 competitors save prompts" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <img src="/7-competitor-save.png" alt="Screenshot of 4 competitors save prompts" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   Screenshot of save prompts from 4 competing products
               </p>
@@ -183,7 +183,7 @@ export function BitwardenAutofillExperiencePage() {
             </p>
           </div>
                   <div>
-                    <img src="/Portfolio/9-userflow-diagram.png" alt="User flow diagram for autofill logins and creating a new account" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                    <img src="/9-userflow-diagram.png" alt="User flow diagram for autofill logins and creating a new account" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                     <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                     User flow diagram for autofill logins and creating a new account
             </p>
@@ -202,7 +202,7 @@ export function BitwardenAutofillExperiencePage() {
             </p>
           </div>
                   <div className="max-w-5xl mt-8">
-                    <img src="/Portfolio/10-ui-iteration.png" alt="UI iteration explorations" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                    <img src="/10-ui-iteration.png" alt="UI iteration explorations" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                     <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                         UI iteration explorations
             </p>
@@ -226,7 +226,7 @@ export function BitwardenAutofillExperiencePage() {
                     </ul>
                   </div>
                   <div>
-                    <img src="/Portfolio/14-user-test.png" alt="Screenshot of a user testing session" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
+                    <img src="/14-user-test.png" alt="Screenshot of a user testing session" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
                     <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                       Screenshot of a user testing session right before they
                       discover the autofill menu
@@ -263,14 +263,14 @@ export function BitwardenAutofillExperiencePage() {
                   <li> A prompt to create a new item when none exist </li>
                 </ul>
                 <div className="mb-8">
-                  <img src="/Portfolio/11-final-password-fill.png" alt="Initial MVP autofill menu design showing the 3 UI states" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <img src="/11-final-password-fill.png" alt="Initial MVP autofill menu design showing the 3 UI states" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                   <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                     The MVP autofill menu design showing the 3 UI's needed:
                     account locked, matching logins, and no matching logins
                   </p>
                 </div>
                 <div>
-                  <img src="/Portfolio/11-final-password-fill2.png" alt="Final MVP released to users" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <img src="/11-final-password-fill2.png" alt="Final MVP released to users" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                   <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                     The MVP autofill menu design showing the "view details" quick
                     link and a prompt to create a new item if there were no matching logins
@@ -290,13 +290,13 @@ export function BitwardenAutofillExperiencePage() {
               <p className="mb-4 max-w-2xl mb-8">
                 This unified all major personal data interactions under a single, predictable UX pattern.              </p>
               <div className="mb-8">
-                <img src="/Portfolio/12-final-cards-ids.png" alt="Designs for autofilling contact information and payment methods" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <img src="/12-final-cards-ids.png" alt="Designs for autofilling contact information and payment methods" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                   Designs for autofilling contact information and payment methods
                 </p>
               </div>
               <div className="mb-8">
-                <img src="/Portfolio/12-final-generate.png" alt="Userflow for creating a new account" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <img src="/12-final-generate.png" alt="Userflow for creating a new account" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                   Designs for creating a new account on a website using the
                   V2 inline autofill for contact information and password
@@ -323,14 +323,14 @@ export function BitwardenAutofillExperiencePage() {
                   </p>
                 </div>
                 <div>
-                  <img src="/Portfolio/15-legacy-save-prompt.png" alt="MVP save prompt improvements" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
+                  <img src="/15-legacy-save-prompt.png" alt="MVP save prompt improvements" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
                   <p className="text-sm text-gray-600 italic mt-4 text-center px-4 pb-4">
                     MVP save prompt improvements
                   </p>
                 </div>
               </div>
               <div className="mb-8">
-                <img src="/Portfolio/16-final-save-prompt.png" alt="Redesigned save prompt" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <img src="/16-final-save-prompt.png" alt="Redesigned save prompt" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   Redesigned save prompt showing the new primary actions and confirmation messaging
                 </p>
@@ -352,7 +352,7 @@ export function BitwardenAutofillExperiencePage() {
               </p>
             </div>
             <video width="full" height="240" controls className="rounded-md">
-              <source src="/Portfolio/autofill-notification-demo.mp4" type="video/mp4"></source>
+              <source src="/autofill-notification-demo.mp4" type="video/mp4"></source>
             </video>
             <div className="text-gray-700 grid grid-cols-1 md:col-span-2 md:grid-cols-3 gap-8"> 
               <p className="bg-[#FFD6C2] p-6 rounded-lg text-gray-800 italic">

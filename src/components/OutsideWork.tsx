@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion';
 export function OutsideWork() {
   const images = [{
-    url: "/Portfolio/smith-rock.jpg",
+    url: "/smith-rock.jpg",
     caption: 'Exploring Smith Rock State Park'
   }, {
-    url: "/Portfolio/wedding.jpg",
+    url: "/wedding.jpg",
     caption: "My boyfriend, now fiancé, and I at our friend's wedding"
   }, {
-    url: "/Portfolio/scones.jpg",
+    url: "/scones.jpg",
     caption: 'Homemade gluten free blueberry almond scones'
   }, {
-    url: "/Portfolio/dancing.jpg",
+    url: "/dancing.jpg",
     caption: 'Social dancing with friends'
   }, {
-    url: '/Portfolio/woods.png',
+    url: '/woods.png',
     caption: 'Finding inspiration at Redwood National Park'
   }, {
-    url: "/Portfolio/ramen.jpg",
+    url: "/ramen.jpg",
     caption: 'A second attempt at making gluten free ramen'
   }];
   return <section className="w-full py-16 px-6 md:px-12 bg-white">

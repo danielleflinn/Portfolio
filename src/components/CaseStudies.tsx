@@ -4,28 +4,28 @@ export function CaseStudies() {
   const caseStudies = [{
     title: 'Elevating the Bitwarden Autofill Experience',
     description: 'Improving user satisfaction and adoption iteratively by increasing usability of Bitwarden autofill and save through delivering the #1 community requested feature.',
-    image: "/Portfolio/inline-menu-cover.png",
+    image: "/inline-menu-cover.png",
     duration: '6 months',
     team: '1 person',
     tools: ['UI/UX Design', 'Iterative delivery', 'Competitive analysis', 'Usability Testing', 'Stakeholder management', 'Figma']
   }, {
     title: 'Modernizing the Bitwarden Extension',
     description: 'Improving user satisfaction and adoption by modernizing the Bitwarden extension interface and making password management more approachable.',
-    image: "/Portfolio/extension-cover.png",
+    image: "/extension-cover.png",
     duration: '10 months',
     team: '2 people',
     tools: ['UI/UX design', 'Heuristic evaluation', 'Wireframing', 'Prototyping', 'Usability testing', 'Stakeholder management', 'Figma']
   }, {
     title: 'Unifying the Bitwarden Design Language',
     description: 'Improving user satisfaction and internal design and development experience through establishing an atomic Design System and Component Library.',
-    image: "/Portfolio/design-system-cover.png",
+    image: "/design-system-cover.png",
     duration: 'multi-year',
     team: '3 people',
     tools: ['Design System', 'Component library', 'Storybook', 'Planning workshop', 'Visual design', 'Interaction design', 'Team processes design', 'Figma']
   }, {
     title: 'Creating a social wellbeing solution',
     description: 'Improving user engagement and competitive positioning by launching a 0 to 1 social wellness product and expanding business offerings.',
-    image: "/Portfolio/community-cover.png",
+    image: "/community-cover.png",
     duration: '6 months',
     team: '1 person',
     tools: ['UI/UX Design', 'Discovery research', 'User surveys', 'User interviews', 'Gamification map', 'Wireframing', 'Usability testing', 'Sketch']
@@ -34,7 +34,7 @@ export function CaseStudies() {
       <div className="flex flex-col items-center max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
           <div>
-            <img src="/Portfolio/headshot.jpeg" alt="Professional head shot of Danielle Flinn smiling at the camera" className="w-48 h-48 rounded-full object-cover" />
+            <img src="/headshot.jpeg" alt="Professional head shot of Danielle Flinn smiling at the camera" className="w-48 h-48 rounded-full object-cover" />
           </div>
           <div className="text-center md:text-left flex-1">
             <div className="flex justify-center md:justify-start items-center mb-4">

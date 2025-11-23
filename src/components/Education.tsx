@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 export function Education() {
   const educationItems = [{
-    logo: "/Portfolio/ewu.png",
+    logo: "/ewu.png",
     degree: 'Bachelor of Design in User Experience',
     institution: 'Eastern Washington University'
   }, {
-    logo: "/Portfolio/atomic-design.png",
+    logo: "/atomic-design.png",
     degree: 'Design Systems Masterclass',
     institution: 'Brad Frost via Hatch Conference'
   }, {
-    logo: "/Portfolio/deque.png",
+    logo: "/deque.png",
     degree: 'Web Accessibility Curriculum',
     institution: 'Deque Systems, Inc'
   }];
