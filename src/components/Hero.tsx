@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 export function Hero() {
-  return <section className="w-full py-16 md:py-24 px-6 md:px-12 bg-[#FFFAF5]">
+  return <section className="w-full py-16 md:py-12 px-6 md:px-12 bg-[#FFFAF5]">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center">
         <motion.div className="md:w-1/2 mb-8 md:mb-0" initial={{
         opacity: 0,

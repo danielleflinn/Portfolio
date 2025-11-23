@@ -1,5 +1,6 @@
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { Skills } from './components/Skills';
 import { CaseStudies } from './components/CaseStudies';
 import { DesignPhilosophy } from './components/DesignPhilosophy';
 import { Contact } from './components/Contact';
@@ -11,6 +12,7 @@ export function App() {
         <Hero />
         <CaseStudies />
         <DesignPhilosophy />
+        <Skills />
         <Contact />
       </main>
       <Footer />
