@@ -1,7 +1,61 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { MailIcon, LinkedinIcon, GithubIcon } from 'lucide-react';
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+  const handleMyWorkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      // Store intent to scroll to my-work
+      sessionStorage.setItem('scrollToMyWork', 'true');
+      navigate('/');
+      // Use multiple requestAnimationFrame calls to ensure DOM is ready
+      const scrollToMyWork = () => {
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            const element = document.getElementById('my-work');
+            if (element) {
+              const navbar = document.querySelector('nav');
+              const navbarHeight = navbar ? navbar.offsetHeight : 73;
+              const elementTop = element.offsetTop;
+              const offsetPosition = elementTop - navbarHeight;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+              sessionStorage.removeItem('scrollToMyWork');
+            } else {
+              // Element not ready yet, try again
+              setTimeout(scrollToMyWork, 50);
+            }
+          });
+        });
+      };
+      // Start scrolling after navigation has had time to process
+      setTimeout(scrollToMyWork, 200);
+    } else {
+      // Already on homepage, just scroll
+      const element = document.getElementById('my-work');
+      if (element) {
+        const navbar = document.querySelector('nav');
+        const navbarHeight = navbar ? navbar.offsetHeight : 73;
+        const elementTop = element.offsetTop;
+        const offsetPosition = elementTop - navbarHeight;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+  };
   return <footer className="w-full py-8 px-6 md:px-12 bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
@@ -15,10 +69,10 @@ export function Footer() {
           </div>
           <div className="flex flex-col md:flex-row items-center">
             <nav className="flex space-x-6 mb-4 md:mb-0 md:mr-8">
-              <Link to="/" className="text-gray-600 hover:text-[#F4632F] text-sm">
+              <a href="#" className="text-gray-600 hover:text-[#F4632F] text-sm" onClick={handleMyWorkClick}>
                 My work
-              </Link>
-              <Link to="/about" className="text-gray-600 hover:text-[#F4632F] text-sm">
+              </a>
+              <Link to="/about" className="text-gray-600 hover:text-[#F4632F] text-sm" onClick={(e) => handleLinkClick(e, '/about')}>
                 About
               </Link>
             </nav>

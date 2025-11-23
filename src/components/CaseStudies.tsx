@@ -30,7 +30,7 @@ export function CaseStudies() {
     team: '1 person',
     tools: ['UI/UX Design', 'Discovery research', 'User surveys', 'User interviews', 'Gamification map', 'Wireframing', 'Usability testing', 'Sketch']
   }];
-  return <section id="recipes" className="w-full py-16 px-6 md:px-12 bg-white">
+  return <section id="my-work" className="w-full py-16 px-6 md:px-12 bg-white">
       <div className="flex flex-col items-center max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
           <div>
