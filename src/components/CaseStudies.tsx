@@ -31,19 +31,24 @@ export function CaseStudies() {
     tools: ['UI/UX Design', 'Discovery research', 'User surveys', 'User interviews', 'Gamification map', 'Wireframing', 'Usability testing', 'Sketch']
   }];
   return <section id="recipes" className="w-full py-16 px-6 md:px-12 bg-white">
-      <div className="flex flex-col items-center max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <div className="flex justify-center items-center mb-4">
-            <BookOpenIcon size={32} className="text-[#F4632F]" />
+      <div className="flex flex-col items-center max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
+          <div>
+            <img src="/Portfolio/headshot.jpeg" alt="Professional head shot of Danielle Flinn smiling at the camera" className="w-48 h-48 rounded-full object-cover" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            My Work
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real challenges, scalable solutions, and measurable outcomes
-            demonstrating my impact from serving start ups and established
-            companies.
-          </p>
+          <div className="text-center md:text-left flex-1">
+            <div className="flex justify-center md:justify-start items-center mb-4">
+              <BookOpenIcon size={32} className="text-[#F4632F]" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+              My Work
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto md:mx-0">
+              Real challenges, scalable solutions, and measurable outcomes
+              demonstrating my impact from serving start ups and well established
+              companies.
+            </p>
+          </div>
         </div>
         <div className="flex flex-col gap-6 max-w-5xl">
           {caseStudies.map((study, index) => <RecipeCard key={index} title={study.title} description={study.description} image={study.image} duration={study.duration} team={study.team} tools={study.tools} index={index} />)}

@@ -34,7 +34,7 @@ export function Contact() {
       }} viewport={{
         once: true
       }}>
-          <a href="mailto:contact@dflinn.com" className="bg-[#F4632F] hover:bg-[#D94F23] text-black font-semibold tracking-wide px-8 py-4 rounded-lg transition-colors flex items-center justify-center">
+          <a href="mailto:contact@dflinn.com" className="border-2 border-[#F45F2A] text-[#C3471D] hover:bg-[#FFF0E8] font-semibold tracking-wide px-8 py-4 rounded-lg transition-colors flex items-center justify-center">
             <MailIcon size={20} className="mr-2" />
             Email me
           </a>

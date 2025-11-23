@@ -23,7 +23,7 @@ export function Hero() {
             bring system thinking, process maturity, and excellence to growing
             design teams (and the kitchen).
           </p>
-          <Link to="/about" className="bg-[#F4632F] hover:bg-[#D94F23] text-black font-semibold tracking-wide px-6 py-3 rounded-lg transition-colors flex items-center justify-center inline-flex">
+          <Link to="/about" className="border-2 border-[#F45F2A] text-[#C3471D] hover:bg-[#FFF0E8] font-semibold tracking-wide px-6 py-3 rounded-lg transition-colors flex items-center justify-center inline-flex">
             More about me
             <ArrowRight size={18} className="ml-2" />
           </Link>

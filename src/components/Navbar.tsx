@@ -13,7 +13,7 @@ export function Navbar() {
             Danielle Flinn
           </Link>
           <span className="hidden md:inline-block text-gray-500 ml-2">
-            Senior Product Designer <span className="md:hidden lg:inline-block">& Home Cook</span> 
+            Senior Product Designer
           </span>
         </div>
         {/* Desktop Navigation */}
