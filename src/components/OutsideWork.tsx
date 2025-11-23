@@ -35,10 +35,10 @@ export function OutsideWork() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Outside of work
           </h2>
-          <p className="text-lg text-gray-600 mb-4 max-w-4xl">
+          <p className="text-gray-600 mb-4 max-w-2xl">
             When I'm not working, you'll find me experimenting with new recipes in my kitchen, exploring a new local restaurant, hiking, or meeting new friends at a social dance. 
           </p>
-          <p className="text-lg text-gray-600 mb-12 max-w-4xl">
+          <p className="text-gray-600 mb-12 max-w-2xl">
           Wherever I go, I'm curious to understand how the world works and am on the lookout for fantastic design inspiration.
           </p>
         </motion.div>

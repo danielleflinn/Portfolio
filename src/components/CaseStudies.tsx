@@ -32,13 +32,13 @@ export function CaseStudies() {
   }];
   return <section id="recipes" className="w-full py-16 px-6 md:px-12 bg-white">
       <div className="flex flex-col items-center max-w-5xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
           <div>
             <img src="/headshot.jpeg" alt="Professional head shot of Danielle Flinn smiling at the camera" className="w-48 h-48 rounded-full object-cover" />
           </div>
           <div className="text-center md:text-left flex-1">
             <div className="flex justify-center md:justify-start items-center mb-4">
-              <BookOpenIcon size={32} className="text-[#F4632F]" />
+              <BookOpenIcon size={32} className="text-[#F4632F] hidden md:block" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
               My Work
