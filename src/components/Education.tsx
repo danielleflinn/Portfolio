@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ClickableImage } from './ClickableImage';
 export function Education() {
   const educationItems = [{
     logo: "/ewu.png",
@@ -32,7 +33,7 @@ export function Education() {
           once: true
         }}>
               <div className="w-16 h-16 mb-4 overflow-hidden bg-gray-100">
-                <img src={item.logo} alt={item.institution} className="w-full h-full object-cover" />
+                <ClickableImage src={item.logo} alt={item.institution} className="w-full h-full object-cover" caption={`${item.degree} from ${item.institution}`} />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {item.degree}

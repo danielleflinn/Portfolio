@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ChefHatIcon, PenToolIcon, SparklesIcon, CheckCircleIcon, SettingsIcon } from 'lucide-react';
+import { ClickableImage } from './ClickableImage';
 export function About() {
   return <section id="about" className="w-full py-16 px-6 md:px-12 bg-[#FFFAF5]">
       <div className="max-w-5xl mx-auto">
@@ -76,7 +77,7 @@ export function About() {
           once: true
         }}>
             <div className="w-80 md:mt-16">
-              <img src="/headshot.jpeg" alt="Professional head shot of Danielle Flinn smiling at the camera" className="w-80 rounded-full object-cover shadow-lg border-4 border-white" />
+              <ClickableImage src="/headshot.jpeg" alt="Professional head shot of Danielle Flinn smiling at the camera" className="w-80 rounded-full object-cover shadow-lg border-4 border-white" caption="Professional head shot of Danielle Flinn smiling at the camera" />
             </div>
           </motion.div>
         </div>

@@ -5,6 +5,7 @@ import { CaseStudySection } from '../components/CaseStudySection';
 import { PageNav } from '../components/PageNav';
 import { Link } from 'react-router-dom';
 import { PageStepper } from '../components/PageStepper';
+import { ClickableImage } from '../components/ClickableImage';
 
 const sections = [
   { id: 'overview', label: 'Overview' },
@@ -52,7 +53,7 @@ export function BitwardenDesignSystemPage() {
             </p>
           </div>
           <div className="md:col-span-2 lg:col-span-3">
-            <img src="/ds-legacy-ui.png" alt="3 screenshots of the Bitwarden Password Manager interfaces showing flat, gray UI with different design patterns used on each interface." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+            <ClickableImage src="/ds-legacy-ui.png" alt="3 screenshots of the Bitwarden Password Manager interfaces showing flat, gray UI with different design patterns used on each interface." className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="Screenshots from 2021 showing the desktop, web app, and extension interfaces all using a different UI framework" />
             <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
             Screenshots  from 2021 showing the desktop, web app, and extension interfaces all using a different UI framework
             </p>
@@ -102,7 +103,7 @@ export function BitwardenDesignSystemPage() {
                 </p>
               </div>
               <div>
-                <img src="/ds-definition.png" alt="Stakeholder education design system definition: A guide for how a product should look, feel and function and the building blocks for how to make the product." className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
+                <ClickableImage src="/ds-definition.png" alt="Stakeholder education design system definition: A guide for how a product should look, feel and function and the building blocks for how to make the product." className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" caption="Stakeholder education presentation design system definition" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4 ">
                   Stakeholder education presentation design system definition
                 </p>
@@ -124,7 +125,7 @@ export function BitwardenDesignSystemPage() {
                 </ul>
               </div>
               <div>
-                <img src="/ds-diagram.png" alt="Stakeholder education presentation diagram" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" />
+                <ClickableImage src="/ds-diagram.png" alt="Stakeholder education presentation diagram" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-2xl" caption="Stakeholder education presentation and diagrams" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4 ">
                   Stakeholder education presentation and diagrams
                 </p>
@@ -168,7 +169,7 @@ export function BitwardenDesignSystemPage() {
                 </ul>
               </div>
               <div className="mb-8">
-                <img src="/ds-planning.png" alt="Cross-functional working group collaboration" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <ClickableImage src="/ds-planning.png" alt="Cross-functional working group collaboration" className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="FigJam board used in a working group planning session" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   FigJam board used in a working group planning session
                 </p>
@@ -183,7 +184,7 @@ export function BitwardenDesignSystemPage() {
                 </p>
               </div>
               <div>
-                <img src="/ds-button-audit.png" alt="Button styles showing 6 different styles with outdated icons and hover states." className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-xl" />
+                <ClickableImage src="/ds-button-audit.png" alt="Button styles showing 6 different styles with outdated icons and hover states." className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-xl" caption="Example component audit and analysis for buttons" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   Example component audit and analysis for buttons
                 </p>
@@ -199,7 +200,7 @@ export function BitwardenDesignSystemPage() {
                 </p>
               </div>
               <div>
-                <img src="/ds-legacy-tokens.png" alt="Design tokens catalog and documentation" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-xl" />
+                <ClickableImage src="/ds-legacy-tokens.png" alt="Design tokens catalog and documentation" className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-xl" caption="Design tokens catalog and documentation" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   Design tokens catalog and documentation
                 </p>
@@ -216,7 +217,7 @@ export function BitwardenDesignSystemPage() {
                 </p>
               </div>
               <div>
-                <img src="/ds-buttons.png" alt="Button components with all variants and states shown in Figma alongside usage and accessibility guidance. " className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-xl" />
+                <ClickableImage src="/ds-buttons.png" alt="Button components with all variants and states shown in Figma alongside usage and accessibility guidance. " className="w-full h-auto rounded-lg overflow-hidden shadow-md max-w-xl" caption="Example of Figma components and documentation for buttons" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   Example of Figma components and documentation for buttons
                 </p>
@@ -234,7 +235,7 @@ export function BitwardenDesignSystemPage() {
                 </p>
               </div>
               <div className="mb-8">
-                <img src="/ds-web-app.png" alt="Web app migration progress and component adoption" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <ClickableImage src="/ds-web-app.png" alt="Web app migration progress and component adoption" className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="The web app before and after being migrated to the Bitwarden Design System" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   The web app before and after being migrated to the Bitwarden Design System
                 </p>
@@ -255,7 +256,7 @@ export function BitwardenDesignSystemPage() {
                   </Link>
                 </div>
                 <div>
-                  <img src="/ds-new-tokens.png" alt="Updated design tokens and components for Bitwarden showing more friendly and inviting visuals" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <ClickableImage src="/ds-new-tokens.png" alt="Updated design tokens and components for Bitwarden showing more friendly and inviting visuals" className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="The design system's updated design tokens and components" />
                   <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                     The design system's updated design tokens and components
                   </p>
@@ -263,7 +264,7 @@ export function BitwardenDesignSystemPage() {
               </div>
               
               <div className="mb-8">
-                <img src="/ds-extension.png" alt="Extension redesign with upgraded design tokens" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                <ClickableImage src="/ds-extension.png" alt="Extension redesign with upgraded design tokens" className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="The Bitwarden extension before and after the migration to the Design System" />
                 <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                   The Bitwarden extension before and after the migration to the Design System
                 </p>
@@ -279,13 +280,13 @@ export function BitwardenDesignSystemPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div className="mb-8">
-                  <img src="/ds-desktop.png" alt="Screenshot showing the design system components applied to the desktop application" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <ClickableImage src="/ds-desktop.png" alt="Screenshot showing the design system components applied to the desktop application" className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="Applying the design system components to the desktop application to create a unified interface across platforms" />
                   <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                     Applying the design system components to the desktop application to create a unified interface across platforms
                   </p>
                 </div>
                 <div className="mb-8">
-                  <img src="/ds-new-webapp.png" alt="The new UI styles from the extension refresh applied to the web app. The image reflects a similar user interface to that of the view of the desktop interface." className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+                  <ClickableImage src="/ds-new-webapp.png" alt="The new UI styles from the extension refresh applied to the web app. The image reflects a similar user interface to that of the view of the desktop interface." className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="The new UI styles applied to the web app" />
                   <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                     The new UI styles applied to the web app. 
                   </p>

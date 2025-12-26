@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ClickableImage } from './ClickableImage';
 export function OutsideWork() {
   const images = [{
     url: "/smith-rock.jpg",
@@ -56,7 +57,7 @@ export function OutsideWork() {
           once: true
         }}>
               <div className="aspect-[4/3] overflow-hidden rounded-lg mb-3">
-                <img src={image.url} alt={image.caption} className="w-full h-full object-cover" />
+                <ClickableImage src={image.url} alt={image.caption} className="w-full h-full object-cover" caption={image.caption} />
               </div>
               <p className="text-gray-700 text-center">{image.caption}</p>
             </motion.div>)}

@@ -4,6 +4,7 @@ import { CaseStudySummary } from '../components/CaseStudySummary';
 import { CaseStudySection } from '../components/CaseStudySection';
 import { PageNav } from '../components/PageNav';
 import { PageStepper } from '../components/PageStepper';
+import { ClickableImage } from '../components/ClickableImage';
 import { UserCircle, Users, Award, Rss, Share2 } from 'lucide-react';
 
 const sections = [
@@ -109,13 +110,13 @@ export function WHSCommunityPage() {
               I use pen and paper sketches to map information architecture and wireframes for key screens. Then I translated the wireframes into low-fidelity wireframes in Sketch. Sharing these early artifacts with the PM and design team helped secure alignment on the structure of the product direction.
             </p>
           <div>
-            <img src="/com-sketches.png" alt="Sketches showing the information architecture and key screens" className="w-full h-auto rounded-lg overflow-hidden mb-4 shadow-md" />
+            <ClickableImage src="/com-sketches.png" alt="Sketches showing the information architecture and key screens" className="w-full h-auto rounded-lg overflow-hidden mb-4 shadow-md" caption="Sketches showing information architecture and key screens" />
             <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                 Sketches showing information architecture and key screens
               </p>
           </div>
           <div className="col-span-2">
-          <img src="/com-wireframes1.png" alt="Low fidelity wireframes used to drive alignment with stakeholders" className="w-full h-auto rounded-lg overflow-hidden shadow-md" />
+          <ClickableImage src="/com-wireframes1.png" alt="Low fidelity wireframes used to drive alignment with stakeholders" className="w-full h-auto rounded-lg overflow-hidden shadow-md" caption="Low fidelity wireframes used to drive alignment with stakeholders" />
           <p className="text-sm text-gray-600 italic mt-4 text-center px-4">
                 Low fidelity wireframes used to drive alignment with stakeholders
               </p>
@@ -140,8 +141,8 @@ export function WHSCommunityPage() {
                   Based on this input, I iterated toward a more refined concept and introduced clearer categorization, reduced repetition, and adjusted filtering logic.
                 </p>
                 <div>
-                  <img src="/com-wireframes2.png" alt="Low-fidelity wireframes being tested with users" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
-                  <p className="text-sm text-gray-600 italic text-center">Low-fidelity wireframes being tested with users</p>
+                  <ClickableImage src="/com-wireframes2.png" alt="Low-fidelity wireframes used in testing" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Low-fidelity wireframes used in testing" />
+                  <p className="text-sm text-gray-600 italic text-center">Low-fidelity wireframes used in testing</p>
                 </div>
             </div>
             <div className="mb-8">
@@ -161,7 +162,7 @@ export function WHSCommunityPage() {
                   Users completed these tasks successfully, validating the general flow. However, the tests revealed that some filtering controls created cognitive overload, so I made adjustments that eventually led to removing certain filters entirely.
                 </p>
                 <div>
-                  <img src="/com-high-fidelity.png" alt="High-fidelity prototype tested with users" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                  <ClickableImage src="/com-high-fidelity.png" alt="High-fidelity prototype tested with users" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="High-fidelity screens tested with users" />
                   <p className="text-sm text-gray-600 italic text-center">High-fidelity screens tested with users</p>
                 </div>
               </div>
@@ -177,7 +178,7 @@ export function WHSCommunityPage() {
                   To resolve this, for the MVP I added a "My Activity" filter to the main feed, ensuring visibility across devices.
                 </p>
                 <div>
-                  <img src="/com-mobile.png" alt="Mobile screens used in testing" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                  <ClickableImage src="/com-mobile.png" alt="Mobile screens used in testing" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Mobile screens used in testing" />
                   <p className="text-sm text-gray-600 italic text-center">Mobile screens used in testing</p>
                 </div>
               </div>
@@ -191,51 +192,51 @@ export function WHSCommunityPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div>
-                <img src="/com-1st-grow.png" alt="Main feed interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-1st-grow.png" alt="Main feed interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="First time setup" />
                 <p className="text-sm text-gray-600 text-center">First time setup</p>
               </div>
               <div>
-                <img src="/com-1st-profile.png" alt="Main groups page interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-1st-profile.png" alt="Main groups page interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Upload profile image" />
                 <p className="text-sm text-gray-600 text-center">Upload profile image</p>
               </div>
               <div>
-                <img src="/com-1st-join.png" alt="Discover groups interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-1st-join.png" alt="Discover groups interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Join first group" />
                 <p className="text-sm text-gray-600 text-center">Join first group</p>
               </div>
               <div>
-                <img src="/com-lobby.png" alt="Main feed interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-lobby.png" alt="Main feed interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Main feed" />
                 <p className="text-sm text-gray-600 text-center">Main feed</p>
               </div>
               <div>
-                <img src="/com-my-groups.png" alt="Main groups page interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-my-groups.png" alt="Main groups page interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Main groups page" />
                 <p className="text-sm text-gray-600 text-center">Main groups page</p>
               </div>
               <div>
-                <img src="/com-discover.png" alt="Discover groups interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-discover.png" alt="Discover groups interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Discover groups" />
                 <p className="text-sm text-gray-600 text-center">Discover groups</p>
               </div>
               <div>
-                <img src="/com-group.png" alt="Nutrition wellbeing group page" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-group.png" alt="Nutrition wellbeing group page" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Group page" />
                 <p className="text-sm text-gray-600 text-center">Group page</p>
               </div>
               <div>
-                <img src="/com-comment.png" alt="Interface for commenting on a post" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-comment.png" alt="Interface for commenting on a post" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Comment on a post" />
                 <p className="text-sm text-gray-600 text-center">Comment on a post</p>
               </div>
               <div>
-                <img src="/com-group-members.png" alt="List of group members page" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-group-members.png" alt="List of group members page" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Group members page" />
                 <p className="text-sm text-gray-600 text-center">Group members page</p>
               </div>
               <div>
-                <img src="/com-create-post.png" alt="Create a post interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-create-post.png" alt="Create a post interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Create a post" />
                 <p className="text-sm text-gray-600 text-center">Create a post</p>
               </div>
               <div>
-                <img src="/com-advocates.png" alt="Wellness advocate page interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-advocates.png" alt="Wellness advocate page interface" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Wellness advocate page" />
                 <p className="text-sm text-gray-600 text-center">Wellness advocate page</p>
               </div>
               <div>
-                <img src="/com-settings.jpg" alt="Community profile settings" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" />
+                <ClickableImage src="/com-settings.jpg" alt="Community profile settings" className="w-full h-auto rounded-lg overflow-hidden shadow-md mb-2" caption="Profile settings" />
                 <p className="text-sm text-gray-600 text-center">Profile settings</p>
               </div>
             </div>

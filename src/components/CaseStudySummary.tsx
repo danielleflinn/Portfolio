@@ -1,3 +1,5 @@
+import { ClickableImage } from './ClickableImage';
+
 interface CaseStudySummaryProps {
   title: string;
   description: string;
@@ -24,7 +26,7 @@ export function CaseStudySummary({
           {/* Image column - appears first on mobile, second on desktop */}
           <div className="w-full md:w-2/5 md:order-2 flex flex-col gap-6">
             <div className="rounded-xl overflow-hidden">
-              <img src={image} alt={title} className="w-full h-auto object-contain" />
+              <ClickableImage src={image} alt={title} className="w-full h-auto object-contain" caption={title} />
             </div>
             {/* Background Section - appears here on desktop only */}
             <div className="hidden md:block p-4 bg-[#FFF0E8] rounded-lg border border-[#FFD6C2]">

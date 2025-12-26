@@ -6,16 +6,21 @@ import { BitwardenExtensionRedesignPage } from './pages/BitwardenExtensionRedesi
 import { BitwardenDesignSystemPage } from './pages/BitwardenDesignSystemPage';
 import { WHSCommunityPage } from './pages/WHSCommunityPage';
 import { ScrollToTop } from './components/ScrollToTop';
+import { LightboxProvider } from './components/LightboxContext';
+import { Lightbox } from './components/Lightbox';
 export function AppRouter() {
   return <HashRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/bitwarden-autofill-experience" element={<BitwardenAutofillExperiencePage />} />
-        <Route path="/bitwarden-extension-redesign" element={<BitwardenExtensionRedesignPage />} />
-        <Route path="/bitwarden-design-system" element={<BitwardenDesignSystemPage />} />
-        <Route path="/whs-community" element={<WHSCommunityPage />} />
-      </Routes>
+      <LightboxProvider>
+        <ScrollToTop />
+        <Lightbox />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/bitwarden-autofill-experience" element={<BitwardenAutofillExperiencePage />} />
+          <Route path="/bitwarden-extension-redesign" element={<BitwardenExtensionRedesignPage />} />
+          <Route path="/bitwarden-design-system" element={<BitwardenDesignSystemPage />} />
+          <Route path="/whs-community" element={<WHSCommunityPage />} />
+        </Routes>
+      </LightboxProvider>
     </HashRouter>;
 }
